@@ -1,0 +1,72 @@
+
+
+//This code will automatically place "coming soon" on unfinished pages
+#main-content{
+    .content{
+        // background-color: $projectBackground;
+        padding:19.8% 0;
+    }
+    .comingSoon{
+        display: flex;
+        width:60%;
+        margin-left: auto;
+        // margin-right: auto;
+        text-align: center;
+        font-size: 24px;
+        color:$credBorder;
+        i{
+            background-color: $credBackground;
+            font-size: 48px;
+            color: black;
+            border:3px solid $titleBackground;
+            border-radius: 50%;
+            box-shadow: 0px 0px 3px 0px #000000;
+            padding:10px;
+            margin-left: 25px;
+        }
+    }
+}
+
+@media(min-width:$break-m){
+    .comingSoon{
+        // text-align: center;
+        width:100%;
+        font-size: 14px;
+        // margin-right: auto;
+    }
+}
+
+
+// Styles the Title Bar accross pages
+.title-wrapper{
+    width:100%;
+    border-bottom: 5px solid $credBorder;
+    color: $white;
+    background-color: $titleBackground;
+    padding:43px 0;
+    .title{
+        text-align: center;
+        width:300px;
+        margin:0 auto;
+        // padding:43px;
+
+    }
+}
+
+//This code will position the infomation on scsScheme and AboutMe
+
+// #infomation{
+//     // text-align: center;
+//     margin-right: auto;
+//     margin-left: auto;
+// }
+
+// @media(min-width:$break-l){
+//     .aboutMe{//},.sections{
+//         width:720px;
+//         // height:500px;
+//         margin-left:  auto;
+//         margin-right: auto;
+//     }
+// }
+

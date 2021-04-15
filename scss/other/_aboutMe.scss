@@ -1,0 +1,118 @@
+
+// #sidebar{
+//     display: none;
+// }
+
+.aboutMe h1,.lang h1{
+    text-align: center;
+    color: $white;
+    background-color: $titleBackground;
+    border: 3px solid $credBorder;
+    border-radius: 0 5px 0  5px;
+    width:90%;
+    text-transform: capitalize ;
+    margin-top: 5%;
+    padding:20px;
+}
+.aboutMe p, .lang p{
+    margin-top:5%;
+    padding:20px;
+    font-size: 18px;
+    background-color:$credBackground;
+    border: 2px solid $credBorder;
+}
+
+.aboutMe {
+    p{
+        width:90%;
+        // margin-left: auto ;
+        // margin-right: 5%;
+    }
+}
+
+
+.lang {
+    p{
+        width: 90%;
+        // margin-right:auto;
+        // margin-left:5%;
+    }
+}
+
+@media(min-width:$break-l){
+
+    .wrapper{
+        width:75%;
+        margin-left:auto;
+    }
+    .aboutMe,.lang{
+        h1{
+            width:25%;
+        }
+        p{
+            width:40%;
+            margin-left:10%;
+        }
+    } 
+}
+
+// .aboutMe{
+//     width:85%;
+//     // text-align: center;
+//     margin-left:auto;
+//     margin-right: auto;
+
+//     h2{
+//         text-align: center;
+//         font-size: 38px;
+//         // padding:100px 0;
+//         margin-top:50px;
+//         margin-bottom: 50px;
+//         text-decoration: underline;
+//         letter-spacing: .44px;
+//         color: $credBorder;
+//     }
+//     p{
+//         font-size: 18px;
+//         border-left: 3px solid $credBorder;
+//         padding-left: 20px;
+
+
+//     }        
+// }
+
+
+// @media(min-width:$break-l){
+//     // .aboutMe{
+//     //     width:720px;
+//     //     height:500px;
+//     //     margin:0 auto;
+//     //     margin-top:30px;
+//     // }
+// }
+
+// @media(min-width:$break-m)and(max-width:$break-l){
+//     .aboutMe{
+//         width:515px;
+//         height:700px;
+//         margin-right:5%;
+//         p{
+//             max-width: 515px;
+//         }
+//     }
+// }
+// @media(min-width:$break-l)and(max-width:$break-xl){
+//     .aboutMe{
+//         width:700px;
+//         height:700px;
+//         margin-right:5%;
+//     }
+// }
+
+// @media(min-width:$break-xl){
+//     .aboutMe{
+//         width:700px;
+//         height:700px;
+//         margin-right:5%;
+//     }
+// }

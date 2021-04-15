@@ -1,0 +1,44 @@
+[ x ] Create Form at bottom of HTML
+[ x ] Change the banner image
+[ x ] Change the colour scheme
+[ x ] Change the font family
+[ ] Create Internal Pages using site Branding
+    [ ] About me Page - Keep relevent and professional.
+    [ x ] Coding Examples - "Coming soon" - Will add on as progressing
+    [ x ] SCS Scheme- 
+        [ x ]Intro to SCS Scheme, 
+        [ x ]Treehouse ( Can try to pull info from my score onto portfolio in js)
+        [ x ]About Netmatters
+[ x ] Link up Menu to the relevent pages or parts of page.
+[ ] Upload to C-Panel
+    [ ]Navigate to springfield.netmatters-server.co.uk/cpanel
+    [ ] FileManager > upload website within public_html
+    [ ] Navigate your website ad firstname-lastname.netmatters-scs.co.uk
+[ ] Test Website
+    [ ] Is it responsive?
+    [ ] Does it work in -
+        [ ] IE
+        [ ] Microsoft Edge
+        [ ] Firefox
+        [ ] Chrome
+    [ ] Does it match Concept
+[ ] issues
+    [ ] Resolve locally > commit> push to github > upload changes to cpanel > retest > repeat.
+[ ] Peer Test
+    [ ] get three scions to test website
+    [ ] Resolve
+[ ] notify Kayleigh with link to github
+
+
+[ x ] Make sure landing image overlay is responsive
+[ x ] Projects section text does not break out of boxes.
+[ x ] Completed projects responsive
+[ x ] Submit button has some style on it
+[ x ] contact details responsive
+[ x ] coding examples temp is centered correctly
+[ ] Make sure that the scroll links are pointing at the same place
+[ ] SCS Scheme page responsive
+[ ] Fill out About me Section
+[ ] About Me Page responsive
+[ ] content all aligned correctly
+[ ] Upload to cPanel

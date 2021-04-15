@@ -1,0 +1,92 @@
+//|| SideBar ||\\
+//Creates Sidebar and positions it on all pages that have #sidebar will eventually get this to be created in JS
+
+// #sidebar{
+//     display: none;
+// }
+
+#sidebar {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    margin-right: auto;
+    background-color: $credBackground;
+    border-right: 3px solid $credBorder;
+    overflow-x: hidden;
+    padding-top: 20px;
+    
+    #initials{
+        text-align: center;
+        border-bottom: 5px solid $credBorder;
+        height:70px;
+        padding:17.5px 0;
+
+        a{
+            font-family: 'Great Vibes', cursive;
+            color:$credBorder;
+            font-size: 48px;
+            text-decoration: none;
+        }
+    }
+
+    ol{
+        padding:0;
+        li{
+            list-style: none;
+            text-align: center;
+            margin-top:20px;
+            margin-bottom:20px;
+            border: 3px solid transparent;
+
+            a{
+                margin-top: 10px;
+                margin-bottom:10px;
+                text-decoration: none;
+                font-size: 1.5em;
+                color:black; 
+                &:visited{
+                    color:black;
+                }
+            }
+
+            &:first-of-type{
+                margin-top: 50px;
+            }
+            &:hover{
+                border-top: 3px solid $credBorder;
+                border-bottom: 3px solid $credBorder;
+                a{
+                    color:$links;
+
+                }
+            }
+        }
+    }
+
+    ul{
+        padding: 0;
+        list-style: none;
+        font-size: 32px;
+        li{
+            text-align: center;
+            a{
+                color: $credBorder;
+                &:hover{
+                    color: $links;
+                }
+            }
+        }
+    }
+}
+
+// Hides sidebar on mobile
+
+@media(max-width:767px){
+    #sidebar{
+        display: none;
+    }
+}
+  

@@ -1,13 +1,33 @@
+@import
+//|| Structure Loads first||\\
+'scss/structure/mediaQueries',
+'scss/structure/colours',
+'scss/structure/mixins',
+'scss/structure/sideBar',
+
+//|| Design ||\\
+'scss/landing/titleImage',
+'scss/landing/projects',
+'scss/landing/contact',
+
+//|| Page Speciphic ||\\
+'scss/other/aboutMe',
+'scss/other/scs',
+'scss/other/crossPage';
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
 *{
     margin:0;
+    font-family: 'Montserrat',sans-serif;
+    user-select: none ;
 }
-// @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
-// @font-face {
-//     font-family:"";
-// }
 
-@import 
-'scss/mediaQueries',
-'scss/titleImage',
-'scss/credentials',
-'scss/projects';
+//For pages that have this id
+#body{
+    background-color: $projectBackground;
+    
+}
+
