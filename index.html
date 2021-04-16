@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title> David Every's Portfolio</title>
+    <title> Portfolio | David Every</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge"> <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 
@@ -37,6 +37,14 @@
                 <li><a href ="https://github.com/David-Every?tab=repositories" target="_blank"><i class="fab fa-github"></i></a></li>
             </ul>
         </div>
+        <div class = "b-menu"> 
+            <!-- <a href ="#"> -->
+               <span class ="burger-line"></span>
+               <span class ="burger-line"></span>
+               <span class ="burger-line"></span>
+               <!-- <small> menu </small> -->
+            <!-- </a> -->
+        </div>
         
         <div id ="intro">
             <!-- Image Import -->
@@ -46,12 +54,12 @@
                 <div id = "title-overlay" >
                     <h1> My Name is David Every<br><small>I'm a Web Developer</small></h1>
                 </div>
-                <div class ="scroll">
-                    <a href="#main-content">
-                        <h3>Scroll Down</h3>
-                        <i class="fas fa-chevron-down"></i>
-                    </a>
-                </div>
+                    <div class ="scroll">
+                        <a href="#main-content">
+                            <h3>Scroll Down</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </a>
+                    </div>
             </div>
             
            
@@ -64,7 +72,7 @@
                 <div class ="completed-projects" > 
                     <div class ="pro">
                         <a href =" ">
-                            <img src ="imgs/html-reflection.png">
+                            <img src ="imgs/html-reflection.png" alt="HTML/SCSS Reflection">
                             <div class ="proText">
                                 <h2> Project One</h2>
                                 <h4> View Project <i class="fas fa-arrow-right"></i> </h4>
@@ -73,7 +81,7 @@
                     </div>
                     <div class ="pro">
                         <a href =" ">
-                            <img src ="imgs/pairs-project.png">
+                            <img src ="imgs/pairs-project.png" alt = "Pairs Project">
                             <div class ="proText">
                                 <h2> Project Two</h2>
                                 <h4> View Project <i class="fas fa-arrow-right"></i> </h4>
@@ -82,7 +90,7 @@
                     </div>
                     <div class ="pro">
                         <a href =" ">
-                            <img src ="imgs/coming-soon.png">
+                            <img src ="imgs/coming-soon.png" alt = "Coming soon">
                             <div class ="proText">
                                 <h2> Project Three</h2>
                                 <h4> View Project <i class="fas fa-arrow-right"></i> </h4>
@@ -115,7 +123,7 @@
                     <input type="text" id ="lastName" name ="lastName" placeholder="Last Name">
                 </span>
 
-                <input type ="email" id ="email" name ="email"placeholder="Email">
+                <input type ="email" id ="email" name ="email" placeholder="Email">
                 <input type="text" id ="subject" name ="subject" placeholder = "Subject">
                 <!-- <input type="text" id="message" contenteditable placeholder="Message..."> -->
                 <textarea id = "message" name ="message" placeholder="Message"></textarea>
@@ -124,11 +132,13 @@
             </div>
            
         </div>
-        <div class ="scrollup">
-            <a href="#">
-                <i class="fas fa-chevron-up"></i>
-                <h3>Scroll up</h3>
-            </a>
+        <div class="scrollUpPosition"> 
+            <div class ="scrollup">
+                <a href="#">
+                    <i class="fas fa-chevron-up"></i>
+                    <h3>Scroll up</h3>
+                </a>
+            </div>
         </div>
        
         <script src = "JS/app.js"></script>

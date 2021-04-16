@@ -78,21 +78,28 @@ background: linear-gradient(180deg, rgba(217,211,205,1) 10%, rgba(192,175,168,1)
     //     margin-top:15px;
     // }
 }
-.scrollup{
+
+
+
+.scrollUpPosition{
     background-color: rgb(192,175,168);
-    margin:0;
-    padding:0;
-    text-align: center;
-    text-transform: capitalize;
-    padding-bottom: 25px;
-    font-size: 18px;
-    font-weight: 700;
-    letter-spacing: 1px;
-    a{
-        color:$credBorder;
-        text-decoration: none;
+    padding-top:25px;
+
+    .scrollup{
+        text-align: center;
+        text-transform: capitalize;
+        padding-bottom: 25px;
+        font-size: 18px;
+        font-weight: 700;
+        letter-spacing: 1px;
+        a{
+            color:$credBorder;
+            text-decoration: none;
+        }
     }
 }
+
+
 
 input:focus,
 select:focus,
@@ -145,6 +152,11 @@ button:focus{
     #msg{
         width:30%;
     }
+
+    .scrollup{
+        width:75%;
+        margin-left: auto;
+    }
     
 }
 
@@ -170,12 +182,14 @@ button:focus{
             }
         }
     }
-    .scrollup{
-        padding-left: 13%;
-    }
 
     #msg{
         width:20%;
+    }
+
+    .scrollup{
+        width:80%;
+        margin-left: auto;
     }
 }
 
@@ -210,11 +224,14 @@ button:focus{
             max-width:96%;
         }
     }
-    .scrollup{
-        padding-left: 13%;
-    }
 
     #msg{
         width:20%;
     }
+
+    .scrollup{
+        width:85%;
+        margin-left: auto;
+    }
+
 }

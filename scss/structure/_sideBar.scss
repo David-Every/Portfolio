@@ -82,11 +82,33 @@
     }
 }
 
+.b-menu{
+    height:65px;
+    width:65px;
+    background-color: black;
+    position:fixed;
+    bottom:10px;
+    left:10px;
+    display: none;
+
+    .burger-line{
+        margin-left:15px;
+        width: 33px;
+        height: 3px;
+        margin-bottom: 5px;
+    //     // z-index: 5;
+    }
+    
+}
+
 // Hides sidebar on mobile
 
 @media(max-width:767px){
     #sidebar{
         display: none;
+    }
+    .b-menu{
+        // display: block;
     }
 }
   
