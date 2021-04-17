@@ -1,44 +1,64 @@
-[ x ] Create Form at bottom of HTML
-[ x ] Change the banner image
-[ x ] Change the colour scheme
-[ x ] Change the font family
-[ ] Create Internal Pages using site Branding
-    [ ] About me Page - Keep relevent and professional.
-    [ x ] Coding Examples - "Coming soon" - Will add on as progressing
-    [ x ] SCS Scheme- 
-        [ x ]Intro to SCS Scheme, 
-        [ x ]Treehouse ( Can try to pull info from my score onto portfolio in js)
-        [ x ]About Netmatters
-[ x ] Link up Menu to the relevent pages or parts of page.
-[ x ] Upload to C-Panel
-    [ x ]Navigate to springfield.netmatters-server.co.uk/cpanel
-    [ x ] FileManager > upload website within public_html
-    [ x ] Navigate your website ad firstname-lastname.netmatters-scs.co.uk
-[ x ] Test Website
-    [ x ] Is it responsive?
-    [ ] Does it work in -
-        [ ] IE
-        [ ] Microsoft Edge
-        [ ] Firefox
-        [ ] Chrome
-    [ ] Does it match Concept
-[ ] issues
-    [ ] Resolve locally > commit> push to github > upload changes to cpanel > retest > repeat.
-[ ] Peer Test
-    [ ] get three scions to test website
-    [ ] Resolve
-[ ] notify Kayleigh with link to github
+[ ] Create Portfolio
+    [ x ] Create Form at bottom of HTML
+    [ x ] Change the banner image
+    [ x ] Change the colour scheme
+    [ x ] Change the font family
+    [x ] Create Internal Pages using site Branding
+        [ x ] About me Page - Keep relevent and professional.
+        [ x ] Coding Examples - "Coming soon" - Will add on as progressing
+        [ x ] SCS Scheme- 
+            [ x ]Intro to SCS Scheme, 
+            [ x ]Treehouse ( Can try to pull info from my score onto portfolio in js)
+            [ x ]About Netmatters
+    [ x ] Link up Menu to the relevent pages or parts of page.
+    [ x ] Upload to C-Panel
+        [ x ]Navigate to springfield.netmatters-server.co.uk/cpanel
+        [ x ] FileManager > upload website within public_html
+        [ x ] Navigate your website ad firstname-lastname.netmatters-scs.co.uk
+    [ x ] Test Website
+        [ x ] Is it responsive?
+        [x ] Does it work in -
+            [ x ] IE
+            [ x ] Microsoft Edge
+            [ x ] Firefox
+            [ x ] Chrome
+        [ x ] Does it match Concept
+    [ x ] issues
+        [ x ] Resolve locally > commit> push to github > upload changes to cpanel > retest > repeat.
+    [ ] Peer Test
+        [ ] get three scions to test website
+        [ ] Resolve
+    [ ] notify Kayleigh with link to github
 
 
-[ x ] Make sure landing image overlay is responsive
-[ x ] Projects section text does not break out of boxes.
-[ x ] Completed projects responsive
-[ x ] Submit button has some style on it
-[ x ] contact details responsive
-[ x ] coding examples temp is centered correctly
-[ x ] Make sure that the scroll links are pointing at the same place
-[ x ] SCS Scheme page responsive
-[ x ] Fill out About me Section
-[ x ] About Me Page responsive
-[ x ] content all aligned correctly
-[ x ] Upload to cPanel
+    [ x ] Make sure landing image overlay is responsive
+    [ x ] Projects section text does not break out of boxes.
+    [ x ] Completed projects responsive
+    [ x ] Submit button has some style on it
+    [ x ] contact details responsive
+    [ x ] coding examples temp is centered correctly
+    [ x ] Make sure that the scroll links are pointing at the same place
+    [ x ] SCS Scheme page responsive
+    [ x ] Fill out About me Section
+    [ x ] About Me Page responsive
+    [ x ] content all aligned correctly
+    [ x ] Upload to cPanel
+[ ] Update Portfolio
+    [ ] Update Banner to have a typing effect
+    [ ] Send Kayleigh a message through task to get her to set up a sub Domain
+    [ ] Update Cards on the homepage with a short description of the Projects
+    [ ] Upload the Netmatters and Builders to Subdomains
+    [ ] Update cPanel to work with Subdomains
+
+    [ ] Code Examples -
+        [ ] Take a section of code from the project and add to coding examples.
+        [ ] This should be Styled and formatted.
+        [ ] Under the code example -
+            [ ] Language Used
+            [ ] What it does
+            [ ] Why i used it.
+        [ ] Update github
+        [ ] Upload to cpanel
+[ ] Test that site works.
+[ ]  Get Three Scions to Test that the Site Works
+[ ] Send to Kayleigh.

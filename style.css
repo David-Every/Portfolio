@@ -134,12 +134,23 @@
   text-align: center;
 }
 
-#overlay #title-overlay h1 {
+#overlay #title-overlay #h1 {
   font-size: 3em;
+  margin-bottom: 25px;
+}
+
+#overlay #title-overlay #h1::after {
+  content: "|";
 }
 
 #overlay #title-overlay small {
   font-size: 24px;
+}
+
+#overlay #title-overlay #titleSpan {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
 }
 
 #overlay .scroll {

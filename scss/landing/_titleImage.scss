@@ -22,11 +22,20 @@
     margin-right: auto;
     #title-overlay{
         text-align: center;
-        h1{
+        #h1{
             font-size: 3em;
+            margin-bottom:25px;
+            &::after{
+                content: "|";
+                // color:transparent;
+            }
         }
+
         small{
             font-size:24px;
+        }
+        #titleSpan{
+            display: inline-flex;
         }
     }
     .scroll{

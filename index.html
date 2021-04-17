@@ -2,47 +2,21 @@
 <html lang="en">
 
 <head>
-    <title> Portfolio | David Every</title>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
-
-    <!-- Font Awesome-->
-    <script src="https://kit.fontawesome.com/8ac16a56cb.js" crossorigin="anonymous"></script>
-
-    <!-- Font -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
-
-    <!-- Initials only? -->
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet"> -->
-
-    <!-- main stylesheet -->
-    <link rel="stylesheet" href ="style.css">
     <!-- JQuery -->
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <div id ="head"> </div>
+    <title> Portfolio | David Every</title>
 </head>
-    <body>
-        <div id ="sidebar">
-            <h1 id ="initials"><a href="#">DE</a></h1>
-            <ol>
-                <li><a href = "subPages/aboutMe.html"> About Me</a></li>
-                <li><a href = "#main-content"> My Portfolio </a></li>
-                <li><a href = "subPages/codeExamples.html"> Coding Examples</a></li>
-                <li><a href = "subPages/scsScheme.html"> SCS Scheme </a></li>
-                <li><a href = "#contactMe"> Contact Me </a></li>
-            </ol>
 
-            <ul>
-                <li><a href ="https://github.com/David-Every?tab=repositories" target="_blank"><i class="fab fa-github"></i></a></li>
-            </ul>
-        </div>
+    <body>
+
+        <!-- <div id ="sidebar"> </div> -->
+
         <div class = "b-menu"> 
             <!-- <a href ="#"> -->
                <span class ="burger-line"></span>
                <span class ="burger-line"></span>
                <span class ="burger-line"></span>
-               <!-- <small> menu </small> -->
             <!-- </a> -->
         </div>
         
@@ -52,7 +26,12 @@
 
             <div id="overlay">
                 <div id = "title-overlay" >
-                    <h1> My Name is David Every<br><small>I'm a Web Developer</small></h1>
+                    <!-- <span id ="titleSpan"> -->
+                    <h1 id ="h1"></h1> 
+                    <!-- <h1>|</h1></span> -->
+                    <h2 id ="h2" > I'm a web Developer</h2>
+                    <!-- <h1> My Name is David Every</h1>
+                    <h2> I'm a Web Developer</h2> -->
                 </div>
                     <div class ="scroll">
                         <a href="#main-content">
@@ -61,12 +40,8 @@
                         </a>
                     </div>
             </div>
-            
-           
-
         </div>
         
-
         <div id ="main-content">
             <div class ="projects">
                 <div class ="completed-projects" > 
@@ -79,6 +54,7 @@
                             </div>
                         </a>
                     </div>
+
                     <div class ="pro">
                         <a href =" ">
                             <img src ="imgs/pairs-project.png" alt = "Pairs Project">
@@ -88,6 +64,7 @@
                             </div>
                         </a>
                     </div>
+
                     <div class ="pro">
                         <a href =" ">
                             <img src ="imgs/coming-soon.png" alt = "Coming soon">
@@ -98,7 +75,6 @@
                         </a>
                     </div>
                 </div>
-
             </div>
         </div>
         <!-- <div id ="bar"></div> -->
@@ -110,11 +86,6 @@
                 <p>
                     Feel free to send me a message if you wish to get in contact and i'll get back to you as soon as possible!
                 </p>
-                <!-- <p>
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore 
-                    magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
-                    consequat. Duis aute irure dolor.
-                </p> -->
             </div>
             <div class ="form">
                 <!-- firstname --> <!-- Lastname -->
@@ -124,10 +95,8 @@
                 </span>
 
                 <input type ="email" id ="email" name ="email" placeholder="Email">
-                <input type="text" id ="subject" name ="subject" placeholder = "Subject">
-                <!-- <input type="text" id="message" contenteditable placeholder="Message..."> -->
+                <input type="text" id ="subject" name ="subject" placeholder = "Subject">>
                 <textarea id = "message" name ="message" placeholder="Message"></textarea>
-                <!-- <input type ="submit" value="Send Message" id ="submit" name = "submit"> -->
                 <p id ="msg">Submit</p>
             </div>
            
@@ -141,6 +110,6 @@
             </div>
         </div>
        
-        <script src = "JS/app.js"></script>
+        <script src = "/JS/app.js"></script>
     </body>
 </html>
