@@ -198,7 +198,6 @@
 
 .pro img {
   width: 100%;
-  height: 80%;
   border-bottom: 1px solid #111228;
 }
 
@@ -217,6 +216,10 @@
 
 .pro:hover .proText {
   color: #511649;
+}
+
+.pro:last-of-type img {
+  height: 68%;
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {

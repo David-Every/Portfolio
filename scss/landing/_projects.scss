@@ -9,21 +9,15 @@
 
 .pro{
     width:90%;
-    // height: auto;
-
     border: 1px solid grey;
     border-radius: 5px;
     box-shadow: 3px 2px 15px 1px rgba(0,0,0,0.22);
     margin:30px auto;
-    // margin-top:30px;
-    // margin-bottom:30px;
-    // margin-left: auto;
-    // margin-right: auto;
     background-color:$white;
 
     img{
         width: 100%;
-        height:80%;
+        // height:80%;
         border-bottom: 1px solid $credBorder;
     }
     
@@ -41,6 +35,11 @@
         }
         .proText{
             color:$links;
+        }
+    }
+    &:last-of-type{
+        img{
+            height:68%;
         }
     }
 }
