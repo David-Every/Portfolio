@@ -25,10 +25,20 @@
         [ x ] Does it match Concept
     [ x ] issues
         [ x ] Resolve locally > commit> push to github > upload changes to cpanel > retest > repeat.
-    [ ] Peer Test
-        [ ] get three scions to test website
-        [ ] Resolve
-    [ ] notify Kayleigh with link to github
+    [ x ] Peer Test
+        [ x ] get three scions to test website
+        [ x ] Peer Test
+    [ x ] get three scions to test website
+        [ x ] Scion Feedback -
+            [ x ] Fade Body on page load / could be better to wait until php
+            [ x ] center page  headings
+            [ x ] Inconsistant widths between each pages content, matching them would look better
+            [ x ] Reduce height of project images (Vertically stretched)
+            [ x ] scs Scheme Image has small bottom gap between border.
+            [ x ] Treehouse / Netmatters logos are a little strctched. 
+    [x ] Resolve
+        [ x ] Resolve
+    [ x ] notify Kayleigh with link to github
 
 
     [ x ] Make sure landing image overlay is responsive

@@ -139,10 +139,6 @@
   margin-bottom: 25px;
 }
 
-#overlay #title-overlay #h1::after {
-  content: "|";
-}
-
 #overlay #title-overlay small {
   font-size: 24px;
 }
@@ -195,7 +191,6 @@
 #main-content {
   padding: 40px 0px;
   background-color: #d9d3cd;
-  height: 700px;
 }
 
 .pro {
@@ -210,13 +205,14 @@
 
 .pro img {
   width: 100%;
-  height: 80%;
+  height: 70%;
   border-bottom: 1px solid #111228;
 }
 
 .pro .proText {
   padding: 2%;
   color: #111228;
+  margin: auto 0;
 }
 
 .pro a {
@@ -271,6 +267,7 @@
     width: 30%;
     margin: 0;
     margin-right: 40px;
+    height: 335px;
   }
   .completed-projects .pro:last-of-type {
     margin-right: 0;
@@ -642,14 +639,14 @@ button:focus {
 #scsImg {
   width: 93%;
   height: 100%;
-  border: 5px solid #111228;
-  border-radius: 10px;
   margin: 10% 5% 7% 3%;
 }
 
 #scsImg img {
   width: 100%;
-  height: 100%;
+  height: auto;
+  border: 5px solid #111228;
+  border-radius: 10px;
 }
 
 .sections {
@@ -679,7 +676,6 @@ button:focus {
 
 .section .treeH {
   width: 258px;
-  height: 90px;
   margin: 0 auto;
 }
 
@@ -690,7 +686,6 @@ button:focus {
 
 .section .netM {
   width: 258px;
-  height: 55px;
   margin: 20px auto;
 }
 
@@ -717,20 +712,79 @@ button:focus {
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
-  #scsImg {
-    width: 61%;
+  .scs {
+    width: 75%;
     margin-left: auto;
-  }
-  .section {
-    width: 60%;
-    margin-left: auto;
-    margin-right: 3%;
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1024px) and (max-width: 1200px) {
   .scs {
-    width: 80%;
+    width: 82%;
+    margin-left: auto;
+  }
+  .scs #scsImg {
+    max-width: 800px;
+    min-width: 750px;
+    margin: 0;
+    margin: 100px auto 50px;
+  }
+  .scs .sections {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    max-width: 800px;
+    min-width: 750px;
+  }
+  .scs .sections .section {
+    width: 43%;
+    height: auto;
+  }
+  .scs .sections .section:first-of-type {
+    width: 100%;
+  }
+  .scs .sections .section:last-of-type {
+    margin-left: 20px;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1400px) {
+  .scs {
+    width: 85%;
+    margin-left: auto;
+  }
+  .scs #scsImg {
+    max-width: 800px;
+    min-width: 750px;
+    margin: 0;
+    margin: 100px auto 50px;
+  }
+  .scs .sections {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    max-width: 800px;
+    min-width: 750px;
+  }
+  .scs .sections .section {
+    width: 43%;
+    height: auto;
+  }
+  .scs .sections .section:first-of-type {
+    width: 100%;
+  }
+  .scs .sections .section:last-of-type {
+    margin-left: 20px;
+  }
+}
+
+@media (min-width: 1401px) {
+  .scs {
+    width: 92%;
     margin-left: auto;
   }
   .scs #scsImg {
@@ -787,13 +841,6 @@ button:focus {
   margin-left: 25px;
 }
 
-@media (min-width: 768px) {
-  .comingSoon {
-    width: 100%;
-    font-size: 14px;
-  }
-}
-
 .title-wrapper {
   width: 100%;
   border-bottom: 5px solid #111228;
@@ -802,29 +849,20 @@ button:focus {
   padding: 43px 0;
 }
 
-.title-wrapper .title {
-  text-align: center;
-  width: 300px;
-  margin: 0 auto;
-}
-
-@media (min-width: 768px) and (max-width: 1024px) {
-  .title-wrapper {
-    width: 80%;
-    margin-left: auto;
+@media (max-width: 768px) {
+  .title {
+    text-align: center;
   }
 }
 
-@media (min-width: 1024px) and (max-width: 1200px) {
-  .title-wrapper {
-    width: 90%;
-    margin-left: auto;
+@media (min-width: 768px) {
+  .comingSoon {
+    width: 100%;
+    font-size: 14px;
   }
-}
-
-@media (min-width: 2560px) {
-  .title-wrapper {
-    width: 95%;
+  .title {
+    width: 50%;
+    text-align: left;
     margin-left: auto;
   }
 }

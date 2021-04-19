@@ -1,0 +1,26 @@
+
+@mixin centerLarge{
+    
+    #scsImg{
+        max-width:800px;
+        min-width:750px;
+        margin:0;
+        margin:100px auto 50px;
+    }
+    .sections{
+        display: flex;
+        flex-wrap: wrap;
+        max-width:800px;
+        min-width:750px;
+        .section{
+            width:43%;
+            height:auto;
+            &:first-of-type{
+                width:100%;
+            }
+            &:last-of-type{
+                margin-left: 20px;
+            }
+        }
+    }
+}
