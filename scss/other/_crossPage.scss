@@ -27,16 +27,6 @@
     }
 }
 
-@media(min-width:$break-m){
-    .comingSoon{
-        // text-align: center;
-        width:100%;
-        font-size: 14px;
-        // margin-right: auto;
-    }
-}
-
-
 // Styles the Title Bar accross pages
 .title-wrapper{
     width:100%;
@@ -44,29 +34,51 @@
     color: $white;
     background-color: $titleBackground;
     padding:43px 0;
+    
+    
+}
+
+@media(max-width:$break-m){
     .title{
         text-align: center;
-        width:300px;
-        margin:0 auto;
-        // padding:43px;
-
     }
 }
 
+@media(min-width:$break-m){
+    .comingSoon{
+        // text-align: center;
+        width:100%;
+        font-size: 14px;
+        // margin-right: auto;
+    }
+    .title{
+        width:50%;
+        text-align: left;
+        margin-left: auto;
+    }
+}
+
+
+
+
 //This code will position the infomation on scsScheme and AboutMe
 
-// #infomation{
-//     // text-align: center;
-//     margin-right: auto;
-//     margin-left: auto;
+// @media(min-width:$break-m) and (max-width:$break-l){
+//     .title{
+//         width:50%;
+//         margin-left: auto;
+//     }
 // }
-
-// @media(min-width:$break-l){
-//     .aboutMe{//},.sections{
-//         width:720px;
-//         // height:500px;
-//         margin-left:  auto;
-//         margin-right: auto;
+// @media(min-width:$break-l)  and (max-width:$break-xl){
+//     .title-wrapper{
+//         width:90%;
+//         margin-left: auto;
 //     }
 // }
 
+// @media(min-width:$break-4k){
+//     .title-wrapper{
+//         width:95%;
+//         margin-left: auto;
+//     }
+// }
