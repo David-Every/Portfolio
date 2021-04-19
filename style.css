@@ -139,10 +139,6 @@
   margin-bottom: 25px;
 }
 
-#overlay #title-overlay #h1::after {
-  content: "|";
-}
-
 #overlay #title-overlay small {
   font-size: 24px;
 }
@@ -805,6 +801,27 @@ button:focus {
   text-align: center;
   width: 300px;
   margin: 0 auto;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .title-wrapper {
+    width: 80%;
+    margin-left: auto;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1200px) {
+  .title-wrapper {
+    width: 90%;
+    margin-left: auto;
+  }
+}
+
+@media (min-width: 2560px) {
+  .title-wrapper {
+    width: 95%;
+    margin-left: auto;
+  }
 }
 
 * {
