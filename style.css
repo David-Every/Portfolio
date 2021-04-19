@@ -139,6 +139,10 @@
   margin-bottom: 25px;
 }
 
+#overlay #title-overlay #h1::after {
+  content: "|";
+}
+
 #overlay #title-overlay small {
   font-size: 24px;
 }
@@ -191,6 +195,7 @@
 #main-content {
   padding: 40px 0px;
   background-color: #d9d3cd;
+  height: 700px;
 }
 
 .pro {

@@ -1,7 +1,7 @@
 #main-content{
     padding:40px 0px;
-    // padding-bottom: 40px;
     background-color: $projectBackground;
+    height: 700px; ;
 
     //For other Pages that is not Index
 }
@@ -9,16 +9,11 @@
 
 .pro{
     width:90%;
-    // height: auto;
-
+    // height: 600px;
     border: 1px solid grey;
     border-radius: 5px;
     box-shadow: 3px 2px 15px 1px rgba(0,0,0,0.22);
     margin:30px auto;
-    // margin-top:30px;
-    // margin-bottom:30px;
-    // margin-left: auto;
-    // margin-right: auto;
     background-color:$white;
 
     img{
@@ -44,10 +39,6 @@
         }
     }
 }
-
-// .completed-projects{
-//     height:700px;
-// }
 
 @media(min-width:$break-m)and(max-width:$break-l){
     .completed-projects{
@@ -81,7 +72,6 @@
             width:30%;
             margin: 0;
             margin-right:40px;
-            // width:500px;
             &:last-of-type{
                 margin-right: 0;
             }
