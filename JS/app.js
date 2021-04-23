@@ -60,4 +60,31 @@ function blink(){
     // setTimeout(remove,300);
 }
 
-writeTitle();
+//Checks for the id if its not there it dosent try to writeTitle();
+if(id = document.getElementById("h1")){
+    writeTitle();
+}
+
+//|| Coding Examples Collapseable/ Accordian ||\\
+
+let collapse = document.getElementsByClassName('collapseTitle');
+for(let i = 0; i < collapse.length; i++){
+    collapse[i].addEventListener('click',accordian);
+}
+
+let isOpen = false;
+
+function accordian(){
+    
+    // console.log("clicked");
+    let par = this.parentElement.getElementsByClassName('content__wrapper');
+
+    if(isOpen){
+        par[i].style.display ="none";
+        isOpen = false;
+    }else{
+        par[i].style.display ="block";
+        isOpen = true;
+    }
+    // console.log(par[i]);
+}

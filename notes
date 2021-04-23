@@ -1,4 +1,4 @@
-[ ] Create Portfolio
+[ x ] Create Portfolio
     [ x ] Create Form at bottom of HTML
     [ x ] Change the banner image
     [ x ] Change the colour scheme
@@ -54,19 +54,20 @@
     [ x ] content all aligned correctly
     [ x ] Upload to cPanel
 [ ] Update Portfolio
-    [ ] Update Banner to have a typing effect
-    [ ] Send Kayleigh a message through task to get her to set up a sub Domain
+    [ x ] Update Banner to have a typing effect
+    [ ] Create it so that the cursor will blink on and off
+    [ x ] Send Kayleigh a message through task to get her to set up a sub Domain
     [ ] Update Cards on the homepage with a short description of the Projects
-    [ ] Upload the Netmatters and Builders to Subdomains
-    [ ] Update cPanel to work with Subdomains
+    [ x ] Upload the Netmatters and Builders to Subdomains
+    [ x ] Update cPanel to work with Subdomains
 
-    [ ] Code Examples -
-        [ ] Take a section of code from the project and add to coding examples.
-        [ ] This should be Styled and formatted.
-        [ ] Under the code example -
-            [ ] Language Used
-            [ ] What it does
-            [ ] Why i used it.
+    [ x ] Code Examples -
+        [ x ] Take a section of code from the project and add to coding examples.
+        [ x ] This should be Styled and formatted.
+        [ x ] Under the code example -
+            [ x ] Language Used
+            [ x ] What it does
+            [ x ] Why i used it.
         [ ] Update github
         [ ] Upload to cpanel
 [ ] Test that site works.

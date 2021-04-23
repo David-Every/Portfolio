@@ -1,37 +1,93 @@
-.code-wrapper{
-    width:100%;
-    h1{
-        text-align: center;
-        background-color: lighten($titleBackground, 35%);
-        padding: 15px 0;
-        border:3px solid $credBorder;
-        border-bottom: none;
-        width:90%;
-        margin:50px auto 0;
+.content__wrapper{
+    display: none;
+}
+
+.collapseTitle{
+    cursor: pointer;
+    text-align: center;
+    background-color: lighten($titleBackground, 35%);
+    padding: 15px 0;
+    border:3px solid $credBorder;
+    // border-bottom: none;
+    &:hover{
+        background-color: lighten($titleBackground,25%);
+        // i{
+        //     background-color: grey;
+        // }
     }
+    &:active{
+        background-color: lighten($titleBackground,15%);
+    }
+    // i{
+    //     margin-left: 25px;
+    //     background-color: lightgray;
+    //     padding:5px 10px;
+    //     border:0.75px solid $credBorder;
+    //     border-radius:50%;
+    //     color: $credBorder;
+    // }
+}
+
+.code-wrapper{
+    width:90%;
+    margin: 75px auto;
     .code{
-        width:90%;
         height:500px;
         background-color: grey;
         border: 3px solid $credBorder;
-        // border-radius: 10px;
+        border-top:none;
         border-bottom: none;
-        margin:0 auto;
         overflow: auto;
         font-size: 18px;
-        
-        // pre{
-        //     margin-top:125px;
-        // }
-       
+        line-height: 24px;
+        letter-spacing: .5px;
+        font-weight: 500;
+    }
+    /* width */
+    ::-webkit-scrollbar {
+        width: 10px;
+    }
+    /* Track */
+    ::-webkit-scrollbar-track {
+        background: $credBackground; 
+    }
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+        background: $credBorder; 
+    }
+
+    p{
+        letter-spacing: .5px;
+        line-height: 25px;
+        font-weight: 300;
+
+        &:first-of-type{
+            padding-bottom: 15px;
+        }
+
+        &:last-of-type{
+            padding-top: 15px;
+        }
+    }
+
+    ul{
+        padding:0;
+        list-style: none;
+        text-transform: capitalize;
+        letter-spacing: .5px;
+        line-height: 25px;
+        font-weight: 300;
+        li::before{
+            content:" - ";
+            padding-right: 10px;
+            font-weight: 900;
+        }
     }
 }
 
 .explanation{
     border: 3px solid $credBorder;
     background-color: $white;
-    width:85%;
-    margin: 0 auto;
     padding:15px;
     font-size: 18px;
     a{
@@ -43,28 +99,75 @@
 }
 
 
-@media(min-width:$break-m) {//and (max-width:$break-l){
-    .code-wrapper{
+
+
+@media(min-width:$break-m) and (max-width:$break-l){
+    #codeSectionsWrapper{
         width:70%;
         margin-left:auto;
-        margin-right: 5%;
     }
-    // .explanation{
-    //     width:85%;
-    // }
+    .code-wrapper{
+        width:550px;
+        margin-top:75px;
+
+    }
 }
 
-@media(min-width:$break-l) and (max-width:$break-xl){
-    .code-wrapper{
-        width:80%;
+@media(min-width:$break-l)and(max-width:$break-xl){
+    #codeSectionsWrapper{
+        width:75%;
         margin-left:auto;
-        margin-right: 0;
+        margin-right:50px;
+    }
+    .code-wrapper{
+        width:100%;
+        margin-top:75px;
+
     }
 }
-@media(min-width:$break-xl){
-    .code-wrapper{
-        width:80%;
+
+@media(min-width:$break-xl)and(max-width:1800px){
+    #codeSectionsWrapper{
+        width:70%;
         margin-left:auto;
-        margin-right: 5%;
+        margin-right:7%;
+    }
+    .code-wrapper{
+        width:100%;
+        margin-top:75px;
+        p{
+            width:67%;
+            padding:25px 30px;
+            
+        }
+        ul{
+        padding: 0 30px;
+        }
+
+    }
+}
+
+@media(min-width:1801px)and(max-width:$break-4k){
+    #codeSectionsWrapper{
+        width:70%;
+        margin-left:auto;
+        margin-right:10%;
+    }
+    .code-wrapper{
+        width:100%;
+        margin-top:75px;
+
+    }
+}
+@media(min-width:$break-4k){
+    #codeSectionsWrapper{
+        width:70%;
+        margin-left:auto;
+        margin-right:10%;
+    }
+    .code-wrapper{
+        width:100%;
+        margin-top:75px;
+
     }
 }
