@@ -8,8 +8,14 @@
     </head>
 
     <body id ="body"></div>
+
+        <div class ="title-wrapper"> 
+            <div class = "title">
+                <h1>Coding Examples</h1>
+            </div>
+        </div>
         
-        <div id ="main-content">
+        <!-- <div id ="main-content">
             <div class ="content">
                 
 
@@ -19,8 +25,72 @@
 
                 </div>
             </div>
+        </div> -->
+        <div class = "code-wrapper">
+            <h1>HTML / SCSS Reflection</h1>
+            <div class ="code">
 
+<!-- Positioned out of align to remove unwanted whitespace in pre I will add this through Javascript  -->
+<pre><code>
+    @each $name, $color, 
+    $hover-colour in $service-colors{
+        .nav-#{$name}{
+            i{
+                color:$color;
+            }
+            &:hover{
+                background-color:$color;
+                i{
+                    color:$nm-primary;
+                }
+            }
+        }
+        .nav-#{$name} .dropdown-content{
+            background-color: $hover-colour; 
+        }
+        .card-nav-#{$name}{
+            //Default
+            background-color: $nm-primary;
+            .rm-#{$name}{
+                background-color: $color; 
+                color:$nm-primary;
+            }
+            .card-icon{
+                background-color: $color;
+                color:$nm-primary;
+            }
+            &:hover{
+                background-color:$color;
+                color:$nm-primary;
+                .card-icon{
+                    background-color: $nm-primary;
+                    color:$color;
+                }
+                .rm-#{$name}{
+                    //padding-top: 100px;
+                    background-color: $nm-primary;
+                    color:$color; 
+                }
+            }
+        }
+    }
+
+</pre></code>
+<!-- Ending Pre -->
+            </div>
+            <div class = "explanation"> 
+                <p>
+                    This code snippet is from the <a href ="http://netmatters.david-every.netmatters-scs.co.uk"> HTML/SCSS Reflection</a>
+                    This is a each loop that designates colours for the navigation bar,the dropdown segment for the navigation 
+                    and the service's cards.
+                </p>
+                <p>
+                    I decided to do it this was as it keeps the code more dry then defining each of the colours for each section
+                    that needed to be coloured.
+                </p>
+            </div>
         </div>
+
         <script src = "/JS/app.js"></script>
     </body>
 </html>

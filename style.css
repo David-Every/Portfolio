@@ -139,6 +139,10 @@
   margin-bottom: 25px;
 }
 
+#overlay #title-overlay #h1::after {
+  content: "|";
+}
+
 #overlay #title-overlay small {
   font-size: 24px;
 }
@@ -864,6 +868,72 @@ button:focus {
     width: 50%;
     text-align: left;
     margin-left: auto;
+  }
+}
+
+.code-wrapper {
+  width: 100%;
+}
+
+.code-wrapper h1 {
+  text-align: center;
+  background-color: #ac8dbf;
+  padding: 15px 0;
+  border: 3px solid #111228;
+  border-bottom: none;
+  width: 90%;
+  margin: 50px auto 0;
+}
+
+.code-wrapper .code {
+  width: 90%;
+  height: 500px;
+  background-color: grey;
+  border: 3px solid #111228;
+  border-bottom: none;
+  margin: 0 auto;
+  overflow: auto;
+  font-size: 18px;
+}
+
+.explanation {
+  border: 3px solid #111228;
+  background-color: #ffffff;
+  width: 85%;
+  margin: 0 auto;
+  padding: 15px;
+  font-size: 18px;
+}
+
+.explanation a {
+  color: #111228;
+}
+
+.explanation a:hover {
+  color: #511649;
+}
+
+@media (min-width: 768px) {
+  .code-wrapper {
+    width: 70%;
+    margin-left: auto;
+    margin-right: 5%;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1200px) {
+  .code-wrapper {
+    width: 80%;
+    margin-left: auto;
+    margin-right: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .code-wrapper {
+    width: 80%;
+    margin-left: auto;
+    margin-right: 5%;
   }
 }
 
