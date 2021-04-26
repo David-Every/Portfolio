@@ -40,24 +40,26 @@ function writeTitle(){
     }
     //If the title has been completed run idle anim
     if(i == 1){
-        // console.log("i = 1");
-
+         //get the cursor to blink at the end of the last letter
         blink();
-        //get the cursor to blink at the end of the last letter
-
     } else{
         setTimeout(writeTitle,100);
-
     }
-    
 }
+let blinkOn = true;
+var styleElem = document.body.appendChild(document.createElement("style"));
+
 
 function blink(){
-    let blink = window.getComputedStyle(textDisplay,'::after');
-    let color = blink.getPropertyValue('color');
-    console.log(color);
-    color.innerHTML.style.color("blue");
-    // setTimeout(remove,300);
+    
+    if(blinkOn){
+        styleElem.innerHTML = "#h1:after {color: transparent;}";
+        blinkOn = false;
+    }else{
+        styleElem.innerHTML = "#h1:after {color: white;}";
+        blinkOn = true;
+    }
+    setTimeout(blink,500);
 }
 
 //Checks for the id if its not there it dosent try to writeTitle();
@@ -68,15 +70,15 @@ if(id = document.getElementById("h1")){
 //|| Coding Examples Collapseable/ Accordian ||\\
 
 let collapse = document.getElementsByClassName('collapseTitle');
+
+let isOpen = false;
 for(let i = 0; i < collapse.length; i++){
     collapse[i].addEventListener('click',accordian);
 }
 
-let isOpen = false;
+
 
 function accordian(){
-    
-    // console.log("clicked");
     let par = this.parentElement.getElementsByClassName('content__wrapper');
 
     if(isOpen){
@@ -86,5 +88,4 @@ function accordian(){
         par[i].style.display ="block";
         isOpen = true;
     }
-    // console.log(par[i]);
 }

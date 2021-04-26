@@ -1,6 +1,10 @@
 .content__wrapper{
     display: none;
 }
+.content__wrapper.fade{
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+}
 
 .collapseTitle{
     cursor: pointer;
@@ -8,24 +12,21 @@
     background-color: lighten($titleBackground, 35%);
     padding: 15px 0;
     border:3px solid $credBorder;
-    // border-bottom: none;
+    color:$credBorder;
     &:hover{
         background-color: lighten($titleBackground,25%);
-        // i{
-        //     background-color: grey;
-        // }
     }
     &:active{
         background-color: lighten($titleBackground,15%);
     }
-    // i{
-    //     margin-left: 25px;
-    //     background-color: lightgray;
-    //     padding:5px 10px;
-    //     border:0.75px solid $credBorder;
-    //     border-radius:50%;
-    //     color: $credBorder;
-    // }
+}
+
+.placeholder{
+    color:$credBorder;
+    text-align: center;
+    background-color: rgb(165, 157, 157);
+    padding: 15px 0;
+    border:3px solid $credBorder;
 }
 
 .code-wrapper{
