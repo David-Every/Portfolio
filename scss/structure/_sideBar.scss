@@ -4,20 +4,8 @@
 // #sidebar{
 //     display: none;
 // }
-
-#sidebar {
-    height: 100%;
-    width: 200px;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    margin-right: auto;
-    background-color: $credBackground;
-    border-right: 3px solid $credBorder;
-    overflow-x: hidden;
-    padding-top: 20px;
-    
+@mixin menu {
+    background-color:$credBackground ;
     #initials{
         text-align: center;
         border-bottom: 5px solid $credBorder;
@@ -82,24 +70,65 @@
     }
 }
 
-.b-menu{
+#sidebar {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    margin-right: auto;
+    // background-color: $credBackground;
+    border-right: 3px solid $credBorder;
+    overflow-x: hidden;
+    padding-top: 20px;
+    
+    @include menu();
+}
+//This is how the menu will look when the user clicks the burger menu on mobile.
+#sidebar__mobile{
+    // display: none;
+    width:100vw;
+    height:100vh;
+    background-color: $credBackground ;    
+    @include menu();
+}
+
+#b-menu{
     height:65px;
     width:65px;
-    background-color: black;
+    background-color: $titleBackground;
     position:fixed;
     bottom:10px;
     left:10px;
-    display: none;
+    // display: none;
+    display: block;
+    border: 2px solid $credBorder;
+    border-radius: 50%;
+    // opacity: .8;
 
-    .burger-line{
-        margin-left:15px;
-        width: 33px;
-        height: 3px;
-        margin-bottom: 5px;
-    //     // z-index: 5;
+
+    .burger-line{//::after{
+        content:" ";
+        width:25px;
+        // background-color: $white;
+        border:2px solid $white;
+        position: relative;
+        top:10%;
+        margin: 10px auto;
+        opacity: 1;
     }
-    
+    &:hover{
+        background-color: lighten($titleBackground,15%);
+    }
+    &:active{
+        // opa
+        background-color: lighten($titleBackground,20%);
+
+    }
 }
+
+
 
 // Hides sidebar on mobile
 
@@ -107,8 +136,15 @@
     #sidebar{
         display: none;
     }
-    .b-menu{
-        // display: block;
+    #b-menu{
+        display: block;
     }
 }
+@media(min-width:767px){
+    #b-menu{
+        display:none;
+    }
+}
+
+
   

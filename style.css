@@ -8,10 +8,10 @@
   top: 0;
   left: 0;
   margin-right: auto;
-  background-color: #e8dde7;
   border-right: 3px solid #111228;
   overflow-x: hidden;
   padding-top: 20px;
+  background-color: #e8dde7;
 }
 
 #sidebar #initials {
@@ -83,25 +83,123 @@
   color: #511649;
 }
 
-.b-menu {
+#sidebar__mobile {
+  width: 100vw;
+  height: 100vh;
+  background-color: #e8dde7;
+  background-color: #e8dde7;
+}
+
+#sidebar__mobile #initials {
+  text-align: center;
+  border-bottom: 5px solid #111228;
+  height: 70px;
+  padding: 17.5px 0;
+}
+
+#sidebar__mobile #initials a {
+  font-family: 'Great Vibes', cursive;
+  color: #111228;
+  font-size: 48px;
+  text-decoration: none;
+}
+
+#sidebar__mobile ol {
+  padding: 0;
+}
+
+#sidebar__mobile ol li {
+  list-style: none;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 3px solid transparent;
+}
+
+#sidebar__mobile ol li a {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-decoration: none;
+  font-size: 1.5em;
+  color: black;
+}
+
+#sidebar__mobile ol li a:visited {
+  color: black;
+}
+
+#sidebar__mobile ol li:first-of-type {
+  margin-top: 50px;
+}
+
+#sidebar__mobile ol li:hover {
+  border-top: 3px solid #111228;
+  border-bottom: 3px solid #111228;
+}
+
+#sidebar__mobile ol li:hover a {
+  color: #511649;
+}
+
+#sidebar__mobile ul {
+  padding: 0;
+  list-style: none;
+  font-size: 32px;
+}
+
+#sidebar__mobile ul li {
+  text-align: center;
+}
+
+#sidebar__mobile ul li a {
+  color: #111228;
+}
+
+#sidebar__mobile ul li a:hover {
+  color: #511649;
+}
+
+#b-menu {
   height: 65px;
   width: 65px;
-  background-color: black;
+  background-color: #523762;
   position: fixed;
   bottom: 10px;
   left: 10px;
-  display: none;
+  display: block;
+  border: 2px solid #111228;
+  border-radius: 50%;
 }
 
-.b-menu .burger-line {
-  margin-left: 15px;
-  width: 33px;
-  height: 3px;
-  margin-bottom: 5px;
+#b-menu .burger-line {
+  content: " ";
+  width: 25px;
+  border: 2px solid #ffffff;
+  position: relative;
+  top: 10%;
+  margin: 10px auto;
+  opacity: 1;
+}
+
+#b-menu:hover {
+  background-color: #7b5393;
+}
+
+#b-menu:active {
+  background-color: #895ca3;
 }
 
 @media (max-width: 767px) {
   #sidebar {
+    display: none;
+  }
+  #b-menu {
+    display: block;
+  }
+}
+
+@media (min-width: 767px) {
+  #b-menu {
     display: none;
   }
 }

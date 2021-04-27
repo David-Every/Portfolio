@@ -12,6 +12,72 @@ $('document').ready(function(){
     $('body').fadeIn(750);
 });
 
+
+// menu Toggle
+let menuOpen = true;
+let menu = document.getElementById("b-menu").addEventListener('click', function () {
+    let mobMenu = document.getElementById("sidebar__mobile");
+    if(menuOpen){
+        mobMenu.style.display = "none";
+        menuOpen = false;
+
+        // burgerbar = document.getElementsByClassName("burger-line");
+        // burgerbar.style.display ="block;"
+    }else{
+        mobMenu.style.display = "block";
+        menuOpen = true;
+
+        // burgerbar = document.getElementsByClassName("burger-line");
+        // burgerbar.style.display ="none;"
+    }
+});
+
+//change menu type
+
+//need a way to debug this if it changes responsively
+
+let x = window.matchMedia("(max-width:767px)");
+// checkWidth();
+window.addEventListener("resize",checkWidth);
+
+// var SMenu = document.getElementById("sidebar");
+
+function checkWidth(){
+    // console.log(`id at start = ${SMenu.id}`);
+
+    if(x.matches){
+        console.log("its less than")
+        if(document.getElementById("sidebar__mobile")){
+            return;
+        }else{
+            SMenu = document.getElementById("sidebar");
+            SMenu.id ="sidebar__mobile";
+            SMenu.style.display="none";
+            menuOpen = false;
+            //sidebar__mobile.style.display = "none";
+            // console.log(`id = ${menu.id}`);
+        }
+        
+    }else {
+        console.log("its greater than")
+        if(document.getElementById("sidebar")){
+            return;
+        }else{
+            SMenu = document.getElementById("sidebar__mobile")
+            SMenu.id ="sidebar";
+            SMenu.style.display="block";
+
+        }
+        
+
+    }
+    // console.log(`id at end = ${SMenu.id}`);
+
+}
+
+// END menu Toggle
+
+
 let textDisplay = document.getElementById("h1");
 
 const title =
