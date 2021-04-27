@@ -46,7 +46,7 @@ function checkWidth(){
     // console.log(`id at start = ${SMenu.id}`);
 
     if(x.matches){
-        console.log("its less than")
+        // console.log("its less than")
         if(document.getElementById("sidebar__mobile")){
             return;
         }else{
@@ -59,7 +59,7 @@ function checkWidth(){
         }
         
     }else {
-        console.log("its greater than")
+        // console.log("its greater than")
         if(document.getElementById("sidebar")){
             return;
         }else{
