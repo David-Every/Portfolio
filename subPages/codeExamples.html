@@ -3,24 +3,134 @@
     <head>
         <!-- JQuery -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <!-- Favicon -->
+        <link rel="apple-touch-icon" sizes="180x180" href="/imgs/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/imgs/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/imgs/favicon/favicon-16x16.png">
+        <!-- <link rel="manifest" href="/site.webmanifest"> -->
         <div id ="head"> </div>
+        
         <title> Portfolio | David Every</title>
     </head>
 
     <body id ="body"></div>
-        
-        <div id ="main-content">
-            <div class ="content">
-                
 
-                <div class="comingSoon"> 
-                    <h1> Coming soon</h1>
-                    <i class="fas fa-wrench"></i>
-
-                </div>
-            </div>
-
+        <div id = "b-menu"> 
+            <a href="#"> 
+                <div class ="burger-line"></div>
+                <div class ="burger-line"></div>
+                <div class ="burger-line"></div>
+            </a>
         </div>
+
+        <div class ="title-wrapper" > 
+            <div class = "title">
+                <h1>Coding Examples</h1>
+            </div>
+        </div>
+
+        <div id ="codeSectionsWrapper">
+             <!--When there are multiple examples make them collapseableinto just the title  -->
+        <div class = "code-wrapper">
+            <h1 class ="collapseTitle">HTML / SCSS Reflection</h1>
+            <div class ="content__wrapper">
+            <div class ="code">
+
+<!-- Positioned out of align to remove unwanted whitespace in pre I will add this through Javascript  -->
+<pre><code>
+    @each $name, $color, 
+    $hover-colour in $service-colors{
+        .nav-#{$name}{
+            i{
+                color:$color;
+            }
+            &:hover{
+                background-color:$color;
+                i{
+                    color:$nm-primary;
+                }
+            }
+        }
+
+        .nav-#{$name} .dropdown-content{
+            background-color: $hover-colour; 
+        }
+        .card-nav-#{$name}{
+            background-color: $nm-primary;
+            .rm-#{$name}{
+                background-color: $color; 
+                color:$nm-primary;
+            }
+            .card-icon{
+                background-color: $color;
+                color:$nm-primary;
+            }
+            &:hover{
+                background-color:$color;
+                color:$nm-primary;
+                .card-icon{
+                    background-color: $nm-primary;
+                    color:$color;
+                }
+                .rm-#{$name}{
+                    background-color: $nm-primary;
+                    color:$color; 
+                }
+            }
+        }
+    }
+
+</pre></code>
+<!-- Ending Pre -->
+            </div>
+            <div class = "explanation"> 
+                <p>
+                    This code snippet is from the <a href ="http://netmatters.david-every.netmatters-scs.co.uk"> HTML/SCSS Reflection</a>
+                    This is a each loop written in SCSS that designates colours for the;
+                </p>
+                <ul>
+                    <li>navigation bar</li>
+                    <li>Navigation dropdown</li>
+                    <li>Service Cards</li>
+
+                </ul>
+                <p>
+                    I decided to code it this was as it keeps the SCSS dry.
+                    The loop cycles through an array called "service-colors",
+                    within which contains class names, default colours and their colours on hover.
+                    This particular loop sets the colours to a classname that was defined within HTML and assigns the colours to them.
+                    This could also be used to add other variables that would need to be different for each section.
+
+                </p>
+            </div>
+        </div>
+
+
+        <!-- Add new HTML here for other code snippets following the below formula -->
+        
+            <!-- <div class = "code-wrapper">
+                <h1 class ="collapseTitle">Placeholder</h1>
+                <div class ="content__wrapper">
+                </div>
+             </div> -->
+             <div class = "code-wrapper">
+                <h1 class ="placeholder">Coming Soon</h1>
+                <div class ="content__wrapper">
+                </div>
+             </div>
+             <div class = "code-wrapper">
+                <h1 class ="placeholder">Coming Soon</h1>
+                <div class ="content__wrapper">
+                </div>
+             </div>
+
+
+             
+        </div>
+
+
+
+
         <script src = "/JS/app.js"></script>
     </body>
 </html>

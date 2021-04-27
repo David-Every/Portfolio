@@ -1,4 +1,4 @@
-[ ] Create Portfolio
+[ x ] Create Portfolio
     [ x ] Create Form at bottom of HTML
     [ x ] Change the banner image
     [ x ] Change the colour scheme
@@ -54,21 +54,30 @@
     [ x ] content all aligned correctly
     [ x ] Upload to cPanel
 [ ] Update Portfolio
-    [ ] Update Banner to have a typing effect
-    [ ] Send Kayleigh a message through task to get her to set up a sub Domain
-    [ ] Update Cards on the homepage with a short description of the Projects
-    [ ] Upload the Netmatters and Builders to Subdomains
-    [ ] Update cPanel to work with Subdomains
+    [ x ] Update Banner to have a typing effect
+    [ x ] Create it so that the cursor will blink on and off
+    [ x ] Send Kayleigh a message through task to get her to set up a sub Domain
+    [ x ] Update Cards on the homepage with a short description of the Projects
+    [ x ] Upload the Netmatters and Builders to Subdomains
+    [ x ] Update cPanel to work with Subdomains
 
-    [ ] Code Examples -
-        [ ] Take a section of code from the project and add to coding examples.
-        [ ] This should be Styled and formatted.
-        [ ] Under the code example -
-            [ ] Language Used
-            [ ] What it does
-            [ ] Why i used it.
+    [ x ] Code Examples -
+        [ x ] Take a section of code from the project and add to coding examples.
+        [ x ] This should be Styled and formatted.
+        [ x ] Under the code example -
+            [ x ] Language Used
+            [ x ] What it does
+            [ x ] Why i used it.
+        [ x ] finish blink()
+        [ x ] work on project descriptions on landing page
+        [ ] Add Menu Button
         [ ] Update github
         [ ] Upload to cpanel
 [ ] Test that site works.
-[ ]  Get Three Scions to Test that the Site Works
+[ x ]  Get Three Scions to Test that the Site Works
 [ ] Send to Kayleigh.
+
+[ ] features i would like to add in future -
+    [ ] small delay of blinking cursor before typing occurs
+    [ x ] add Favicon
+    [ ] change burger icon to cross (do this after i have done javascript reflection?)

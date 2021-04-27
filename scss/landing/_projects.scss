@@ -1,86 +1,100 @@
 #main-content{
     padding:40px 0px;
     background-color: $projectBackground;
-    // height: 700px; ;
-
     //For other Pages that is not Index
 }
 
-
-.pro{
+#projectWrapper{
     width:90%;
-    border: 1px solid grey;
-    border-radius: 5px;
-    box-shadow: 3px 2px 15px 1px rgba(0,0,0,0.22);
-    margin:30px auto;
-    background-color:$white;
+    margin: 0 auto;
+}
 
-    img{
-        width: 100%;
-        height:70%;
-        border-bottom: 1px solid $credBorder;
-    }
+.project{
+    background-color: $credBackground;
+    border:1px solid $credBorder;
+    border-radius: 25px;
+    margin-bottom: 50px;
+    box-shadow: 0px 0px 10px -5px #000000;
+    box-shadow: inset 0px 0px 10px -5px #000000;
     
-    .proText{
-        padding:2%;
-        color:$credBorder;
-        margin:auto 0;
-    }
-    a{
-        text-decoration: none;
-    }
-
-    &:hover{
+    .projectLinks{
         img{
-            opacity: 0.8;
+            width:100%;
+            height:100%;
+            border-bottom:2px solid $credBorder;
+            border-radius: 25px 25px 0 0;
         }
-        .proText{
-            color:$links;
+        a{
+            color:$credBorder;
+            text-decoration: none;
+            h3{
+                text-align: center;
+                padding-left:15px;
+                padding-top:10px;
+                // &::after{
+                //     content: ' ';
+                //     // display: block;
+                //     // position: absolute;
+                //     width:70px;
+                //     border: 2px soild $credBorder;
+                // }
+            }
+        }
+    
+        &:hover{
+
+            img{
+                opacity: 0.7;
+            }
+            a{
+                color:$links;
+            }
         }
     }
+    .projectDescription{
+        padding: 10px 15px;
+        letter-spacing: .5px;
+        line-height: 25px;
+        font-weight: 500;
+    }
+<<<<<<< HEAD
     &:last-of-type{
         img{
             height:70%;
         }
     }
+=======
+>>>>>>> update-portfolio
 }
 
-@media(min-width:$break-m)and(max-width:$break-l){
-    .completed-projects{
-        width:75%;
+
+
+
+@media(min-width:$break-m) and (max-width:1023px){
+    #projectWrapper{
+        width:70%;
+        margin:0;
         margin-left: auto;
+        margin-right:25px;
+
     }
 }
-@media(min-width:$break-l)and (max-width:$break-xl){
-    .completed-projects{
-        display:flex;
-        flex-wrap: wrap;
-        width:80%;
-        margin-left: auto;
-        img{
-            height:65%;
-        }
-        .pro{
-            width:28%;
-            margin:0 20px;
-        }
+
+@media(min-width:1023px) {
+    #projectWrapper{
+        display: flex;
+        width:75%;
+        margin:0;
+        margin-left:auto;
+        margin-right:30px;
+    }
+    .project{
+        margin-right:30px;
     }
 }
 
 @media(min-width:$break-xl){
-    .completed-projects{
-        display:flex;
-        flex-wrap: wrap;
-        margin-left:auto;
-        width:82%;
-        .pro{
-            width:30%;
-            margin: 0;
-            margin-right:40px;
-            height:335px;
-            &:last-of-type{
-                margin-right: 0;
-            }
-        }
+    #projectWrapper{
+        width: 80%;
     }
-}
+} 
