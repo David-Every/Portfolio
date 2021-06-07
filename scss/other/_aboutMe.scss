@@ -31,15 +31,15 @@
 
 }
 
-.aboutMe h1{
-    border-radius: 0 20px 0  20px;
+.aboutMe h1,.lang h1{
+    border-radius: 0 20px 20px 20px;
 
 }
 
-.lang h1{
-    border-radius: 20px 0  20px 0;
-    // margin-top: 50px;
-}
+// .lang h1{
+//     border-radius: 20px 0  20px 0;
+//     // margin-top: 50px;
+// }
 .aboutMe p, .lang p{
     width:80%;
     margin-top:2%;
@@ -50,6 +50,7 @@
     border: 2px solid $credBorder;
     letter-spacing: .22px;
     line-height: 22px;
+    border-radius: 20px 0px 20px 20px;
 
     a{
         color:$credBorder;
@@ -96,21 +97,13 @@
 
 @media(min-width:$break-l) {
     .picPos{
-        width:72%;
-        margin-right:25%;
+        width:7%;
+        margin: 0 auto;
     }
 
     .wrapper{
-        width:75%;
-        margin-left:auto;
-    }
-    .bar{
-        height:550px;
-        background-color: black;
-        border-right: 3px solid $credBorder;
-        position: absolute;
-        right:10%;
-        box-shadow: -10px 0px 20px 1px #000000;
+        width:25%;
+        margin: 0 auto;
     }
     .aboutMe,.lang{
         h1{
@@ -122,23 +115,4 @@
 
         }
     } 
-}
-
-@media(min-width:$break-xl){
-    .bar{
-        height:550px;
-        background-color: black;
-        border-right: 3px solid $credBorder;
-        position: absolute;
-        right:20%;
-    }
-}
-@media(min-width:1550px){
-    .bar{
-        height:550px;
-        background-color: black;
-        border-right: 3px solid $credBorder;
-        position: absolute;
-        right:25%;
-    }
 }

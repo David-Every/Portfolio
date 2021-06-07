@@ -18,6 +18,7 @@ let menuOpen = true;
 let menu = document.getElementById("b-menu").addEventListener('click', function () {
     let mobMenu = document.getElementById("sidebar__mobile");
     if(menuOpen){
+        // mobMenu.animate({right:})
         mobMenu.style.display = "none";
         menuOpen = false;
 
@@ -54,8 +55,6 @@ function checkWidth(){
             SMenu.id ="sidebar__mobile";
             SMenu.style.display="none";
             menuOpen = false;
-            //sidebar__mobile.style.display = "none";
-            // console.log(`id = ${menu.id}`);
         }
         
     }else {
