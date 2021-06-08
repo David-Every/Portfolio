@@ -116,17 +116,132 @@
                 <div class ="content__wrapper">
                 </div>
              </div> -->
+
              <div class = "code-wrapper">
-                <h1 class ="placeholder">Coming Soon</h1>
+                <h1 class ="collapseTitle">Img-Ify (Javascript Reflection)</h1>
                 <div class ="content__wrapper">
-                </div>
-             </div>
-             <div class = "code-wrapper">
-                <h1 class ="placeholder">Coming Soon</h1>
-                <div class ="content__wrapper">
+                    <div class ="code">
+<pre><code> 
+    function loadContent(){
+
+        var e =0;
+        var l = 1;   
+    
+        emailInfo.forEach(() => {
+            var newdiv = document.createElement("div");
+            newdiv.setAttribute("class","linkedEmails");
+            var parentdiv = document.getElementById("allEmails");
+            parentdiv.appendChild(newdiv);
+    
+            var h3 = document.createElement("h3");
+            var title = document.createTextNode(emailInfo[e][0]);
+    
+            h3.appendChild(title);
+            newdiv.appendChild(h3);
+    
+            var ul = document.createElement("ul");    
+            for (let i = 1; i < emailInfo[e].length; i++) {
+                var li = document.createElement("li");
+               
+                var img = document.createElement("img");
+                var imgLink = emailInfo[e][l].toString();
+                imgLink = imgLink + WH[3].toString();
+                img.src = imgLink;
+                
+                li.appendChild(img);
+                ul.appendChild(li);
+                l++;
+            }
+            newdiv.appendChild(ul);
+            l=1;
+            e++;
+        });
+    }
+
+</pre></code>
+                    </div>
+                    <div class = "explanation">
+                        <p>
+                            This code snippit is from <a href ="http://img-ify.david-every.netmatters-scs.co.uk/">
+                            challenge 2</a> of the javascript reflection.
+                            In this task I had to link emails to Images and display that the images
+                            were linked with the email addresses.
+                        </p>
+                        <p>
+                            This function cycles through the array named "emailInfo" in a forEach loop to create a
+                            div for each element in the array, it then appends the email in an h3 as the sections
+                            title.
+                            The function then moves on to looking through how many links are stored with the email address,
+                            adds on an element from another array (named "WH") to set the width and height and is set to
+                            become a string to be used as the html images link to be shown.
+                        </p>
+                        <p>
+                            I chose to write the code in this way to explore how vanilla Javascript can create elements and
+                            assign infomation to these elements in a way that each line can be adapted to be used in HTML.
+                            Another way i could have gotten the same result would have been to concatenate and interpolate
+                            strings with Javascript variables.
+                        </p>
+                    </div>
                 </div>
              </div>
 
+
+
+             <div class = "code-wrapper">
+                <h1 class ="collapseTitle">Netmatters Javascript Reflection</h1>
+                <div class ="content__wrapper">
+                    <div class ="code" >
+
+<pre><code>
+    function checkSet(){
+
+        if(window.matchMedia('(max-width:1023px)').matches){
+            $("#small-additions").css("display","block");
+            $ph.css({"width":"100%", "height":"120.06px"});    
+        }
+        if(window.matchMedia('(min-width:1024px)').matches){    
+            $("#small-additions").css("display","none");
+            $ph.css({"width":"100%", "height":"210px"});
+        }
+        if(window.matchMedia('(max-width:766px)').matches){
+            $("#hamburger").css({"position":"absolute", "top":"30px","right":"5px"});
+        }
+        if(window.matchMedia('(min-width:767px)').matches){
+            $("#hamburger").css("position","initial");
+        }
+    }
+
+</pre></code>
+                    </div>
+                    <div class ="explanation">
+                        <p>
+                            This function named "checkSet" is attached to an event listener that watches for changes to
+                            the browser window being used to view the site, this uses "matchMedia" to check if the window matches any
+                            of the stipulations in this function to do many things.
+                            At the top "small-additons" will enable in small viewports such as Mobile phones and tablets. This ID adds changes
+                            to the Side menu for smaller devices.
+
+                            "$ph" allows there to be a placeholder slot at the top of the site, so that when the animation to show the sites
+                            navigation runs the rest of the site remains in their correct place.
+
+                            "#hamburger" changes the positioning of the burger menu button depending on the window size.
+                        </p>
+                        <p>
+                            I decided to use Jquery for this function as jquery allowed me to write the least amount of code i needed to
+                            do the same thing.
+
+                            This code could have technically been written in CSS using media queries though this showcases how css can be
+                            written within JavaScript / JQuery.
+                        </p>
+                    </div>
+                </div>
+                
+             </div>
+
+             <div class = "code-wrapper">
+                <h1 class ="placeholder">Coming Soon</h1>
+                <div class ="content__wrapper">
+                </div>
 
              
         </div>
