@@ -240,9 +240,42 @@
              </div>
 
              <div class = "code-wrapper">
+                <h1 class ="collapseTitle">SQL Movie Database</h1>
+                <div class ="content__wrapper">
+                    <div class ="code">
+<pre><code> 
+    SELECT mov_title AS "Title", mov_year AS "Year Released" FROM movie
+    WHERE mov_rel_country LIKE '%UK%'
+    AND mov_time >= 120 AND mov_time < 150
+    AND mov_lang LIKE '%English%'
+    AND mov_year > 1995;
+    
+</pre></code>
+                    </div>
+                    <div class ="explanation">
+                        <P>
+                            The Objective of the Query is to filter the Movies
+                            to show which movies in the database were longer then two hours but
+                            less then two and a half hours, where the language spoken in the movie
+                            is english and the movie was released in the UK after 1995.
+                        </P>
+                        <div class ="additional_info">
+                            <h5>Results of SQL Query</h5>
+                            <img src ="/imgs/SQL_Data.png" >
+                        </div>
+                        
+
+                    </div>
+
+                </div>
+            </div>
+
+            <div class = "code-wrapper">
                 <h1 class ="placeholder">Coming Soon</h1>
                 <div class ="content__wrapper">
                 </div>
+
+            </div>
 
              
         </div>

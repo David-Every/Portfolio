@@ -97,6 +97,20 @@
             color:$links;
         }
     }
+    .additional_info{
+        width:230px;
+        margin: 0 auto;
+        h5{
+            margin-bottom: 25px;
+            text-align: center;
+            text-decoration: underline;
+        }
+        img{
+            width:100%;
+            border: 3px solid $credBorder;
+            border-radius: 25px;
+        }
+    }
 }
 
 

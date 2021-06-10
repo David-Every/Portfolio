@@ -730,6 +730,17 @@ button:focus {
     color: #111228; }
     .explanation a:hover {
       color: #511649; }
+  .explanation .additional_info {
+    width: 230px;
+    margin: 0 auto; }
+    .explanation .additional_info h5 {
+      margin-bottom: 25px;
+      text-align: center;
+      text-decoration: underline; }
+    .explanation .additional_info img {
+      width: 100%;
+      border: 3px solid #111228;
+      border-radius: 25px; }
 
 @media (min-width: 768px) and (max-width: 1024px) {
   #codeSectionsWrapper {

@@ -94,3 +94,40 @@ Other feedback
 [ x ] add in new coding examples 
     [ x ] One from NM js reflection
     [ x ] One from img-ify
+
+
+Updating with SQL
+
+Update your portfolio's "Coding Examples" tab with the following
+
+Select one of the following databases 
+Movie Database - https://www.w3resource.com/sql-exercises/movie-database-exercise/subqueries-exercises-on-movie-database.php
+Soccer Database - https://www.w3resource.com/sql-exercises/soccer-database-exercise/subqueries-exercises-on-soccer-database.php
+Employee Database - https://www.w3resource.com/sql-exercises/employee-database-exercise/subqueries-exercises-on-employee-database.php
+
+Add the table structure to your coding example page
+
+Create a query that includes a sub query with formatted outputs that are sorted by a value
+
+Do not copy and paste an example from the challenge website, I will be reviewing against this when reviewing your portfolio
+
+Add a written explanation to the coding example coving the following points
+
+The objective of the query
+
+What the query does
+
+The outcome of the query
+
+
+Movie's released in UK  between 2000 and 2005 thats length is  > 120 mins
+
+mov_id |                     mov_title                      | mov_year | mov_time |    mov_lang     | mov_dt_rel | mov_rel_country
+
+ dir_id |      dir_fname       |      dir_lname
+
+SELECT mov_title AS "Title", mov_year AS "Year Released" FROM movie
+WHERE mov_rel_country LIKE '%UK%'
+AND mov_time >= 120 AND mov_time < 150
+AND mov_lang LIKE '%English%'
+AND mov_year > 1995;
