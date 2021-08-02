@@ -1,23 +1,7 @@
 <!DOCTYPE html>
+<?php include "inc/header.php" ?>
+
 <html lang="en">
-
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
-        <!-- JQuery -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-         <!-- Favicon -->
-         <link rel="apple-touch-icon" sizes="180x180" href="/imgs/favicon/apple-touch-icon.png">
-         <link rel="icon" type="image/png" sizes="32x32" href="/imgs/favicon/favicon-32x32.png">
-         <link rel="icon" type="image/png" sizes="16x16" href="/imgs/favicon/favicon-16x16.png">
-         <!-- <link rel="manifest" href="/site.webmanifest"> -->
-       
-        <title> SCS Scheme | David Every</title>
-    </head>
-    <div id ="head"> </div>
-
-
     <body id="body">
         <!-- <div id ="sidebar"></div> -->
 
@@ -38,7 +22,7 @@
         <div id ="infomation">
             <div class ="scs">
                 <div id ="scsImg"> 
-                    <img  src ="../imgs/SCS.jpg" alt ="Scion Coalition Scheme at Netmatters">
+                    <img  src ="imgs/SCS.jpg" alt ="Scion Coalition Scheme at Netmatters">
                 </div>
                 <div class ="sections">
                     <div class ="section">
@@ -55,7 +39,7 @@
                         <!-- <h2>Treehouse</h2> -->
                         <div class ="treeH"> 
                             <a href ="https://teamtreehouse.com/"  target = "_blank" >
-                                <img src ="../imgs/TeamTreehouse.png" alt="Team Treehouse Logo" >
+                                <img src ="imgs/TeamTreehouse.png" alt="Team Treehouse Logo" >
                             </a>
                         </div>
                         <p>
@@ -70,7 +54,7 @@
                     <div class ="section">
                         <!-- <h2>About Netmatters</h2> -->
                         <div class ="netM"> 
-                            <a  href ="https://www.netmatters.co.uk/"  target = "_blank" ><img src ="../imgs/netmatters-logo.png"  alt ="Netmatters Logo" ></a>
+                            <a  href ="https://www.netmatters.co.uk/"  target = "_blank" ><img src ="imgs/netmatters-logo.png"  alt ="Netmatters Logo" ></a>
                         </div>
                         <ul> 
                             <li>Established in 2008</li>

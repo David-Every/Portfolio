@@ -1,22 +1,7 @@
 <!DOCTYPE html>
+<?php include "inc/header.php" ?>
+
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
-        <!-- JQuery -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <!-- Favicon -->
-        <link rel="apple-touch-icon" sizes="180x180" href="/imgs/favicon/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="/imgs/favicon/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/imgs/favicon/favicon-16x16.png">
-        <!-- <link rel="manifest" href="/site.webmanifest"> -->
-        
-        <title> Portfolio | David Every</title>
-    </head>
-    <div id ="head"> </div>
-
-
     <body id ="body"></div>
 
         <div id = "b-menu"> 
@@ -261,7 +246,7 @@
                         </P>
                         <div class ="additional_info">
                             <h5>Results of SQL Query</h5>
-                            <img src ="/imgs/SQL_Data.png" >
+                            <img src ="imgs/SQL_Data.png" >
                         </div>
                         
 

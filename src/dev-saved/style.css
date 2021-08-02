@@ -146,7 +146,7 @@
 .title-image {
   height: 100vh;
   width: 100%;
-  background: #523762 url("/imgs/background-img.jpg") no-repeat;
+  background: #523762 url("imgs/background-img.jpg") no-repeat;
   background-size: 100% 100%;
   box-shadow: inset 0px 0px 50px 25px rgba(0, 0, 0, 0.5); }
 
@@ -183,9 +183,16 @@
 @media (min-width: 768px) and (max-width: 1024px) {
   #overlay {
     width: 70%;
-    margin-left: 27%; }
+    margin-left: 28%; }
     #overlay h1 {
       min-width: 500px; } }
+
+@media (width: 1024px) {
+  #overlay {
+    width: 70%;
+    margin-left: 20%; }
+    #overlay h1 {
+      min-width: 450px; } }
 
 @media (min-width: 1024px) and (max-width: 1200px) {
   #overlay {
@@ -793,6 +800,7 @@ button:focus {
 
 * {
   margin: 0;
+  padding: 0;
   font-family: 'Montserrat',sans-serif;
   user-select: none; }
 

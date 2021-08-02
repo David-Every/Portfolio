@@ -9,7 +9,7 @@
 .title-image{
     height:100vh;
     width:100%;
-    background:$titleBackground url("/imgs/background-img.jpg") no-repeat;
+    background:$titleBackground url("imgs/background-img.jpg") no-repeat;
     background-size:100% 100%;
     box-shadow: inset 0px 0px 50px 25px rgba(0,0,0,0.5);
 }
@@ -53,13 +53,22 @@
     }
 }
 
-
 @media(min-width:$break-m) and (max-width:$break-l){
     #overlay{
         width:70%;
-        margin-left: 27%;
+        margin-left: 28%;
         h1{
             min-width: 500px;
+        }
+    }
+}
+
+@media(width:1024px){
+    #overlay{
+        width:70%;
+        margin-left: 20%;
+        h1{
+            min-width: 450px;
         }
     }
 }
@@ -74,6 +83,7 @@
 @media(min-width:$break-xl){
     #overlay{
         width:85%;
+        // margin-left: 10%;
         margin-right: 0;
     }
 }

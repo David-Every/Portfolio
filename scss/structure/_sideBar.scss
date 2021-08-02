@@ -1,9 +1,5 @@
 //|| SideBar ||\\
 //Creates Sidebar and positions it on all pages that have #sidebar will eventually get this to be created in JS
-
-// #sidebar{
-//     display: none;
-// }
 @mixin menu {
     background-color:$credBackground ;
     #initials{

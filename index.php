@@ -1,22 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
-        <!-- JQuery -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <!-- Favicon -->
-        <link rel="apple-touch-icon" sizes="180x180" href="/imgs/favicon/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="/imgs/favicon/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/imgs/favicon/favicon-16x16.png">
-        <!-- <link rel="manifest" href="/site.webmanifest"> -->
-        <title> Portfolio | David Every</title> 
-    </head>
-        <div id ="head"> </div>
-
-
+    <?php
+        include "inc/header.php";
+    ?>
     <body>        
         <div id ="intro">
             <!-- Image Import -->
@@ -45,11 +31,26 @@
         
         <div id ="main-content">
             <div id ="projectWrapper">
-
-                <div class = "project">
+                <?php
+                 $project = json_decode(file_get_contents("data/project.json"));
+                    foreach($project->Project as $pro){
+                        echo '<div class = "project">';
+                            echo '<div class = "projectLinks">';
+                                echo '<a href ="'.$pro->link.'" target = "_blank">';
+                                    echo '<img src = "'.$pro->image.'" alt = "'.$pro->altTitle.'">';
+                                    echo '<h3>'.$pro->altTitle.'</h3>';
+                                    echo '<div class = "projectDescription">';
+                                        echo '<p>'.$pro->description.'</p>';
+                                    echo '</div>';
+                                echo '</a>';
+                            echo '</div>';
+                        echo '</div>';
+                    }
+                ?>
+                <!-- <div class = "project">
                     <div class ="projectLinks">
                         <a href ="http://netmatters.david-every.netmatters-scs.co.uk" target ="_blank"> 
-                            <img src ="/imgs/html-reflection.png" alt = "HTML / SCSS Reflection">
+                            <img src ="imgs/html-reflection.png" alt = "HTML / SCSS Reflection">
                             <h3>HTML / SCSS Reflection</h3>
                             <div class = "projectDescription">
                                 <p>
@@ -60,13 +61,12 @@
                             </div>
                         </a>
                     </div>
-                    
                 </div>
 
                 <div class = "project">
                     <div class ="projectLinks">
                         <a href ="http://pairs.david-every.netmatters-scs.co.uk" target ="_blank"> 
-                            <img src ="/imgs/pairs-project.png" alt = "Pairs Project">
+                            <img src ="imgs/pairs-project.png" alt = "Pairs Project">
                             <h3>Quality Builders</h3>
                             <div class = "projectDescription">
                                 <p>
@@ -82,8 +82,8 @@
 
                 <div class = "project">
                     <div class ="projectLinks">
-                        <a href ="http://img-ify.david-every.netmatters-scs.co.uk/"> 
-                            <img id ="imgify" src ="/imgs/img-ify.png" alt = "Img-Ify - A website to link emails to images">
+                        <a href ="http://img-ify.david-every.netmatters-scs.co.uk/" target ="_blank"> 
+                            <img id ="imgify" src ="imgs/img-ify.png" alt = "Img-Ify - A website to link emails to images" target ="_blank">
                             <h3>Img-Ify</h3>
                             <div class = "projectDescription">
                                 <p>
@@ -93,8 +93,7 @@
                             </div>
                         </a>
                     </div>
-                   
-                </div>
+                </div> -->
 
             </div>
         </div>
