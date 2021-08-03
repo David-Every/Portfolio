@@ -233,5 +233,33 @@ button:focus{
         width:85%;
         margin-left: auto;
     }
+}
 
+@media(min-width:1851px)and(max-width:$break-4k){
+    #contactMe{
+        display: flex;
+        padding-left: auto;
+        padding-right: 5%;
+        width:90%;
+
+        .scrollup{
+            width:85%;
+            margin-left: auto;
+            margin-right:5%;
+        }
+    }
+}
+@media(min-width:$break-4k){
+    #contactMe{
+        display: flex;
+        padding-left: auto;
+        padding-right: 5%;
+        width:90%;
+
+    }
+    .scrollup{
+        width:85%;
+        margin-left: auto;
+        margin-right:5%;
+    }
 }

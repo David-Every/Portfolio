@@ -14,7 +14,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href ="dist/style.min.css">
-    <title> Portfolio | David Every</title> 
+    <title> <?php echo $page .' | David Every';?></title> 
 
 </head>
 
@@ -36,8 +36,10 @@
     </ul>
 </div>
 
-<!-- <div id = "b-menu"> 
-    <div class ="burger-line"></div>
-    <div class ="burger-line"></div>
-    <div class ="burger-line"></div>
-</div> -->
+<a href = "#">
+    <div id = "b-menu"> 
+        <div class ="burger-line"></div>
+        <div class ="burger-line"></div>
+        <div class ="burger-line"></div>
+    </div>
+</a>

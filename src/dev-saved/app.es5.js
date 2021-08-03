@@ -13,51 +13,53 @@ $('document').ready(function () {
   $('body').fadeIn(750);
 }); // menu Toggle
 
-var menuOpen = true;
+var menuOpen = false;
 var menu = document.getElementById("b-menu").addEventListener('click', function () {
   var mobMenu = document.getElementById("sidebar__mobile");
 
-  if (menuOpen) {
-    mobMenu.style.display = "none";
-    menuOpen = false; // burgerbar = document.getElementsByClassName("burger-line");
-    // burgerbar.style.display ="block;"
-  } else {
+  if (!menuOpen) {
+    console.log("opening");
     mobMenu.style.display = "block";
-    menuOpen = true; // burgerbar = document.getElementsByClassName("burger-line");
-    // burgerbar.style.display ="none;"
+    menuOpen = true;
+  } else {
+    console.log("closing"); // mobMenu.animate({right:})
+
+    mobMenu.style.display = "none";
+    menuOpen = false;
   }
-}); //change menu type
-//need a way to debug this if it changes responsively
+}); // let menuOpen = true;
+// let $mobMenu = $("sidebar__mobile");
+// let $menu = $("b-menu").on('click', () => {
+//     if(!menuOpen){
+//         menuOpen = true;
+//         $mobMenu.css({"display":"none}"});
+//     }else{
+//         menuOpen = false;
+//         $mobMenu.css({"display":"none}"});
+//     }
+// });
+//#region checks screen size and removes menu depending on size.
 
-var x = window.matchMedia("(max-width:767px)"); // checkWidth();
-
-window.addEventListener("resize", checkWidth); // var SMenu = document.getElementById("sidebar");
+var x = window.matchMedia("(max-width:767px)");
+checkWidth();
+window.addEventListener("resize", checkWidth);
 
 function checkWidth() {
-  // console.log(`id at start = ${SMenu.id}`);
+  // if(x.matches){
+  //     if(document.getElementById("sidebar__mobile")){
+  //         return;
   if (x.matches) {
-    // console.log("its less than")
-    if (document.getElementById("sidebar__mobile")) {
-      return;
-    } else {
-      SMenu = document.getElementById("sidebar");
-      SMenu.id = "sidebar__mobile";
-      SMenu.style.display = "none";
-      menuOpen = false; //sidebar__mobile.style.display = "none";
-      // console.log(`id = ${menu.id}`);
-    }
+    // if($("#sidebar__mobile"))
+    SMenu = document.getElementById("sidebar");
+    SMenu.id = "sidebar__mobile";
+    SMenu.style.display = "none";
   } else {
-    // console.log("its greater than")
-    if (document.getElementById("sidebar")) {
-      return;
-    } else {
-      SMenu = document.getElementById("sidebar__mobile");
-      SMenu.id = "sidebar";
-      SMenu.style.display = "block";
-    }
-  } // console.log(`id at end = ${SMenu.id}`);
-
-} // END menu Toggle
+    SMenu = document.getElementById("sidebar__mobile");
+    SMenu.id = "sidebar";
+    SMenu.style.display = "block";
+  }
+} //#endregion
+//#region main page title interaction
 
 
 var textDisplay = document.getElementById("h1");
@@ -116,7 +118,9 @@ var isOpen = false;
 
 for (var _i = 0; _i < collapse.length; _i++) {
   collapse[_i].addEventListener('click', accordian);
-}
+} //#endregion
+//#region accordian for coding examples
+
 
 function accordian() {
   var par = this.parentElement.getElementsByClassName('content__wrapper');
@@ -128,4 +132,4 @@ function accordian() {
     par[i].style.display = "block";
     isOpen = true;
   }
-}
+} //#endregion

@@ -83,7 +83,6 @@
 }
 //This is how the menu will look when the user clicks the burger menu on mobile.
 #sidebar__mobile{
-    // display: none;
     width:100vw;
     height:100vh;
     background-color: $credBackground ;    
@@ -91,17 +90,16 @@
 }
 
 #b-menu{
+    z-index: 3000;
     height:65px;
     width:65px;
     background-color: $titleBackground;
     position:fixed;
     bottom:10px;
     left:10px;
-    // display: none;
     display: block;
     border: 2px solid $credBorder;
     border-radius: 50%;
-    // opacity: .8;
 
 
     .burger-line{//::after{

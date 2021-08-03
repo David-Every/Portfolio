@@ -1,17 +1,19 @@
 <!DOCTYPE html>
-<?php include "inc/header.php" ?>
+<?php 
+$page = "About Me";
+include "inc/header.php" ?>
 <html lang="en">
 
     <body id ="body">
 
         <!-- <div id = "sidebar"></div> -->
-        <div id = "b-menu"> 
+        <!-- <div id = "b-menu"> 
             <a href="#"> 
                 <div class ="burger-line"></div>
                 <div class ="burger-line"></div>
                 <div class ="burger-line"></div>
             </a>
-        </div>
+        </div> -->
 
         <div class ="title-wrapper"> 
             <div class = "title">
@@ -39,14 +41,15 @@
                 <div class ="lang">
                     <h1> Languages i use</h1>
                     <p>
-                        I am confident in HTML, CSS, SCSS, NODE, Javascript, Jquery, SQL, PHP.
+                        I am confident 
+                        in HTML, CSS, SCSS, NODE, Javascript, Jquery, SQL and PHP.
                     </p>
                     
                 </div>
-            
-
             <!-- <div id ="invisBar" ></div> -->
         </div>
-        <script src = "/dist/app.es6.min.js"></script>
+        <!-- <script src = "/dist/app.es6.min.js"></script>
+        <?php include "inc/footer.php" ?>
+     -->
     </body>
 </html>

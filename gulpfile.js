@@ -1,6 +1,7 @@
 var gulp = require('gulp');
 var sass = require ('gulp-sass');
 var uglifycss = require('gulp-uglifycss');
+//gulp-imagemin
 var rename = require ("gulp-rename");
 var babel = require ("gulp-babel");
 var uglify = require("gulp-uglify");
@@ -76,9 +77,9 @@ gulp.task('watch',() =>{
     gulp.watch(`scss/**/*.scss`, gulp.series('sass'));
     // gulp.watch('src/dev-saved/**/*.css', gulp.series('postcss'))
     gulp.watch('src/**/*.css', gulp.series('css'));
-    gulp.watch('src/app.js',gulp.series('js'));
+    gulp.watch('src/JS/app.js',gulp.series('js'));
     gulp.watch('src/dev-saved/app.es5.js',gulp.series('js-min'));
-    gulp.watch('src/app.js',gulp.series('js6-min'));
+    gulp.watch('src/JS/app.js',gulp.series('js6-min'));
 })
 
 // To start watching type ' gulp watch ' 

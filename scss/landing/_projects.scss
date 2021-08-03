@@ -31,13 +31,6 @@
                 text-align: center;
                 padding-left:15px;
                 padding-top:10px;
-                // &::after{
-                //     content: ' ';
-                //     // display: block;
-                //     // position: absolute;
-                //     width:70px;
-                //     border: 2px soild $credBorder;
-                // }
             }
         }
     
@@ -60,14 +53,20 @@
 }
 
 
-
-@media(min-width:$break-m) and (max-width:1023px){
+@media(min-width:$break-m) and (max-width:900px){
     #projectWrapper{
-        width:70%;
+        width:65%;
         margin:0;
         margin-left: auto;
-        margin-right:25px;
+        margin-right:5%;
 
+    }
+}
+@media(min-width:901px) and (max-width:1022px){
+    #projectWrapper{
+        width:65%;
+        margin-left: auto;
+        margin-right:6.5%;
     }
 }
 
@@ -84,8 +83,28 @@
     }
 }
 
-@media(min-width:$break-xl){
+@media(min-width:$break-xl) and (max-width:1600px){
     #projectWrapper{
         width: 80%;
     }
-} 
+}
+
+@media(min-width:1601px)and(max-width:1850px){
+    #projectWrapper{
+        width: 80%;
+        margin-right:3%;
+    }
+}
+
+@media(min-width:1851px)and(max-width:$break-4k){
+    #projectWrapper{
+        width: 80%;
+        margin-right:5%;
+    }
+}
+@media(min-width:$break-4k){
+    #projectWrapper{
+        width: 80%;
+        margin-right:5%;
+    }
+}

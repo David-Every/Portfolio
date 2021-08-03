@@ -1,17 +1,23 @@
 <!DOCTYPE html>
-<?php include "inc/header.php" ?>
+<?php
+
+//Update Treehouse points
+$page = "SCS Scheme";  
+$treehousePoints = "14,087";
+include "inc/header.php" 
+?>
 
 <html lang="en">
     <body id="body">
         <!-- <div id ="sidebar"></div> -->
 
-        <div id = "b-menu"> 
+        <!-- <div id = "b-menu"> 
             <a href="#"> 
                 <div class ="burger-line"></div>
                 <div class ="burger-line"></div>
                 <div class ="burger-line"></div>
             </a>
-        </div>
+        </div> -->
 
         <div class ="title-wrapper"> 
             <div class = "title">
@@ -47,7 +53,7 @@
                             to C# programming, iOS development, data analysis, and more. By completing courses users can earn points, 
                             allowing them to track their progress and see how much they've covered in certain areas.
                         </p>
-                        <h3>Total Score:<small>11,075</small></h3>
+                        <h3>Total Score:<small><?php echo $treehousePoints ?></small></h3>
                         <a class ="tree" href ="https://www.teamtreehouse.com/davidev">Teamtreehouse.com/davidev</a>
                     </div>
 
@@ -70,6 +76,6 @@
                 </div>
             </div>
         </div>
-        <script src = "/dist/app.es6.min.js"></script>
+        <?php include "inc/footer.php"?>
     </body>
 </html>

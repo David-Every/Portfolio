@@ -14,69 +14,61 @@ $('document').ready(function(){
 
 
 // menu Toggle
-let menuOpen = true;
+let menuOpen = false;
 let menu = document.getElementById("b-menu").addEventListener('click', function () {
     let mobMenu = document.getElementById("sidebar__mobile");
-    if(menuOpen){
+    if(!menuOpen){
+        console.log("opening");
+        mobMenu.style.display = "block";
+        menuOpen = true;
+    }else{
+        console.log("closing");
         // mobMenu.animate({right:})
         mobMenu.style.display = "none";
         menuOpen = false;
-
-        // burgerbar = document.getElementsByClassName("burger-line");
-        // burgerbar.style.display ="block;"
-    }else{
-        mobMenu.style.display = "block";
-        menuOpen = true;
-
-        // burgerbar = document.getElementsByClassName("burger-line");
-        // burgerbar.style.display ="none;"
     }
 });
 
-//change menu type
+// let menuOpen = true;
+// let $mobMenu = $("sidebar__mobile");
 
-//need a way to debug this if it changes responsively
+// let $menu = $("b-menu").on('click', () => {
+//     if(!menuOpen){
+//         menuOpen = true;
+//         $mobMenu.css({"display":"none}"});
+//     }else{
+//         menuOpen = false;
+//         $mobMenu.css({"display":"none}"});
+//     }
+// });
+
+//#region checks screen size and removes menu depending on size.
 
 let x = window.matchMedia("(max-width:767px)");
-// checkWidth();
+checkWidth();
 window.addEventListener("resize",checkWidth);
 
-// var SMenu = document.getElementById("sidebar");
 
 function checkWidth(){
-    // console.log(`id at start = ${SMenu.id}`);
+    // if(x.matches){
+    //     if(document.getElementById("sidebar__mobile")){
+    //         return;
 
     if(x.matches){
-        // console.log("its less than")
-        if(document.getElementById("sidebar__mobile")){
-            return;
-        }else{
-            SMenu = document.getElementById("sidebar");
-            SMenu.id ="sidebar__mobile";
-            SMenu.style.display="none";
-            menuOpen = false;
-        }
-        
-    }else {
-        // console.log("its greater than")
-        if(document.getElementById("sidebar")){
-            return;
-        }else{
-            SMenu = document.getElementById("sidebar__mobile")
-            SMenu.id ="sidebar";
-            SMenu.style.display="block";
-
-        }
-        
-
+        // if($("#sidebar__mobile"))
+        SMenu = document.getElementById("sidebar");
+        SMenu.id ="sidebar__mobile";
+        SMenu.style.display="none";
+    }else{
+        SMenu = document.getElementById("sidebar__mobile");
+        SMenu.id ="sidebar"
+        SMenu.style.display="block";
     }
-    // console.log(`id at end = ${SMenu.id}`);
-
 }
 
-// END menu Toggle
+//#endregion
 
-
+//#region main page title interaction
 let textDisplay = document.getElementById("h1");
 
 const title =
@@ -140,9 +132,10 @@ let isOpen = false;
 for(let i = 0; i < collapse.length; i++){
     collapse[i].addEventListener('click',accordian);
 }
+//#endregion
 
 
-
+//#region accordian for coding examples
 function accordian(){
     let par = this.parentElement.getElementsByClassName('content__wrapper');
 
@@ -154,3 +147,4 @@ function accordian(){
         isOpen = true;
     }
 }
+//#endregion

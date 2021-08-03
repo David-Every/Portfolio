@@ -4,13 +4,13 @@
 <html lang="en">
     <body id ="body"></div>
 
-        <div id = "b-menu"> 
+        <!-- <div id = "b-menu"> 
             <a href="#"> 
                 <div class ="burger-line"></div>
                 <div class ="burger-line"></div>
                 <div class ="burger-line"></div>
             </a>
-        </div>
+        </div> -->
 
         <div class ="title-wrapper" > 
             <div class = "title">
@@ -264,6 +264,8 @@
 
              
         </div>
-        <script src = "/dist/app.es6.min.js"></script>
+        <!-- <script src = "/dist/app.es6.min.js"></script> -->
+        <?php include "inc/footer.php" ?>
+
     </body>
 </html>
