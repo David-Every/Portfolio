@@ -6,9 +6,9 @@ that flexes into rows.
 and will add additional placeholder images to round to the nearest 4
 */
 $('document').ready(function () {
-  $("#head").load("/htmlToCopy/htmlToCopy.html");
-  /*! Fades in page on load */
+  // $("#head").load("/htmlToCopy/htmlToCopy.html");
 
+  /*! Fades in page on load */
   $('body').css('display', 'none');
   $('body').fadeIn(750);
 }); // menu Toggle

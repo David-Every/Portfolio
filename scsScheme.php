@@ -3,7 +3,7 @@
 
 //Update Treehouse points
 $page = "SCS Scheme";  
-$treehousePoints = "14,087";
+$treehousePoints = "15,278";
 include "inc/header.php" 
 ?>
 
@@ -37,7 +37,8 @@ include "inc/header.php"
                             The Scion Coalition Scheme is an intensive, specially tailored training program run by Netmatters in order to give
                             willing candidates the opportunity to enter the industry as web developers. 
                             Under the supervision of senior web developers, scions generally aim to complete training within six to nine months. 
-                            The course is intensive and therefore the level of learning achieved is extensive in a short space of time.
+                            The course is intensive and therefore the level of learning achieved is extensive in a short space of time.<br>
+                            For more infomation - <a class = "Netmatters" href = "https://www.netmatters.co.uk/train-for-a-career-in-tech" target = "_blank">Netmatters Scion Coalition Scheme</a>
                         </p>
                     </div>
 
@@ -54,7 +55,7 @@ include "inc/header.php"
                             allowing them to track their progress and see how much they've covered in certain areas.
                         </p>
                         <h3>Total Score:<small><?php echo $treehousePoints ?></small></h3>
-                        <a class ="tree" href ="https://www.teamtreehouse.com/davidev">Teamtreehouse.com/davidev</a>
+                        <a class ="tree" href ="https://www.teamtreehouse.com/davidev" target = "_blank">Teamtreehouse.com/davidev</a>
                     </div>
 
                     <div class ="section">

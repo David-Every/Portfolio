@@ -1,5 +1,7 @@
 <!DOCTYPE html>
-<?php include "inc/header.php" ?>
+<?php
+$page = "Coding Examples";  
+include "inc/header.php" ?>
 
 <html lang="en">
     <body id ="body"></div>

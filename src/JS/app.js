@@ -5,7 +5,7 @@ and will add additional placeholder images to round to the nearest 4
 */
 
 $('document').ready(function(){
-    $("#head").load("/htmlToCopy/htmlToCopy.html");
+    // $("#head").load("/htmlToCopy/htmlToCopy.html");
 
     /*! Fades in page on load */
     $('body').css('display', 'none');
@@ -29,18 +29,18 @@ let menu = document.getElementById("b-menu").addEventListener('click', function 
     }
 });
 
-// let menuOpen = true;
-// let $mobMenu = $("sidebar__mobile");
+let menuOpen = true;
+let $mobMenu = $("sidebar__mobile");
 
-// let $menu = $("b-menu").on('click', () => {
-//     if(!menuOpen){
-//         menuOpen = true;
-//         $mobMenu.css({"display":"none}"});
-//     }else{
-//         menuOpen = false;
-//         $mobMenu.css({"display":"none}"});
-//     }
-// });
+let $menu = $("b-menu").on('click', () => {
+    if(!menuOpen){
+        menuOpen = true;
+        $mobMenu.css({"display":"none}"});
+    }else{
+        menuOpen = false;
+        $mobMenu.css({"display":"none}"});
+    }
+});
 
 //#region checks screen size and removes menu depending on size.
 
@@ -124,6 +124,13 @@ if(id = document.getElementById("h1")){
     writeTitle();
 }
 
+
+
+//#endregion
+
+
+//#region accordian for coding examples
+
 //|| Coding Examples Collapseable/ Accordian ||\\
 
 let collapse = document.getElementsByClassName('collapseTitle');
@@ -132,10 +139,7 @@ let isOpen = false;
 for(let i = 0; i < collapse.length; i++){
     collapse[i].addEventListener('click',accordian);
 }
-//#endregion
 
-
-//#region accordian for coding examples
 function accordian(){
     let par = this.parentElement.getElementsByClassName('content__wrapper');
 

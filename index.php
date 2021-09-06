@@ -60,7 +60,7 @@
                     Feel free to send me a message if you wish to get in contact and i'll get back to you as soon as possible!
                 </p>
             </div>
-            <div class ="form">
+            <div class ="form" method ="post">
                 <!-- firstname --> <!-- Lastname -->
                 <span class ="names"> 
                     <input type="text" id ="firstName" name ="firstName" placeholder="First Name">
@@ -70,9 +70,9 @@
                 <input type ="email" id ="email" name ="email" placeholder="Email">
                 <input type="text" id ="subject" name ="subject" placeholder = "Subject">
                 <textarea id = "message" name ="message" placeholder="Message"></textarea>
-                <p id ="msg">Submit</p>
+                <p id ="msg" name ="submitMessage">Submit</p>
             </div>
-           
+           <?php include "inc/contact.php" ?>
         </div>
         <div class="scrollUpPosition"> 
             <div class ="scrollup">
@@ -83,10 +83,8 @@
             </div>
         </div>
        
-        <!-- <script src = "/src/JS/app.js"></script> -->
+        <!-- <script src = "src/JS/app.js"></script> -->
         <?php include "inc/footer.php" ?>
-
-        <!-- <script src = "/dist/app.es6.min.js"></script> -->
 
     </body>
 </html>

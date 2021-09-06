@@ -1,4 +1,9 @@
-<script>
+<!-- <script src ="src/JS/app.js"></script> -->
+
+<script src ="title.js"> </script>
+<script src ="sideMenu.JS"> </script>
+
+<!-- <script>
     "use strict";
 
     var ie = !(navigator.userAgent.indexOf("rv:11.0") < 0);
@@ -15,4 +20,4 @@
         document.getElementsByTagName('head')[0].appendChild(script);
         // // Default Script
     }
-</script>
+</script> -->

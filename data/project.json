@@ -3,20 +3,20 @@
         {
             "link" : "http://netmatters.david-every.netmatters-scs.co.uk",
             "image" : "imgs/html-reflection.png",
-            "altTitle" : "HTML / SCSS Reflection",
+            "altTitle" : "PHP / HTML / (S)CSS Reflection",
             "description" : "This is the first reflection I did as a Scion for netmatters, where I had to recreate their landing page for their website as pixel perfect as possible."
         },
         {
             "link":"http://pairs.david-every.netmatters-scs.co.uk",
             "image" : "imgs/pairs-project.png",
             "altTitle": "Quality Builders",
-            "description":"This is a pairs project I did with one other Scion where we had to create a website from a template given to us."
+            "description":"This is a pairs project I did with one other Scion where we had to create a website from a template given to us. On this project I used HTML and (S)CSS"
         },
         {
             "link":"http://img-ify.david-every.netmatters-scs.co.uk/",
             "image":"imgs/img-ify.png",
             "altTitle":"Img-Ify",
-            "description":"This Project is the second Javascript challenge, where I had to link Images with emails."
+            "description":"This Project is a Javascript challenge, where I had to link Images with emails and display the images with the linked email."
         }
     ]
 }

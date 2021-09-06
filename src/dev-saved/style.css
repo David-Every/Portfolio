@@ -581,12 +581,16 @@ button:focus {
   .section h2 {
     margin-top: 20px;
     text-align: center; }
+  .section .Netmatters:hover {
+    color: #333643; }
   .section .treeH {
     width: 258px;
     margin: 0 auto; }
     .section .treeH img {
       width: 100%;
       height: 100%; }
+  .section .tree:hover {
+    color: #35a961; }
   .section .netM {
     width: 258px;
     margin: 20px auto; }

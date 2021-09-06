@@ -34,15 +34,14 @@ include "inc/header.php" ?>
                     <p>
                         I got into programming by making video games within Unity when I turned 18.
                         Ever since I have enjoyed coding.
-                        I Joined the Netmatters <a href ="scsScheme.html"> Scion Coalition Scheme </a> 
+                        I Joined the Netmatters <a class = "Netmatters" href ="scsScheme.php"> Scion Coalition Scheme </a> 
                         in 2020, to discover how to become a Web Developer. 
                     </p>
                 </div>
                 <div class ="lang">
                     <h1> Languages i use</h1>
                     <p>
-                        I am confident 
-                        in HTML, CSS, SCSS, NODE, Javascript, Jquery, SQL and PHP.
+                        I am confident in:- <br> HTML, CSS, SCSS, Javascript, NODE, Jquery, SQL, PHP, JAVA, C# and Android.
                     </p>
                     
                 </div>
