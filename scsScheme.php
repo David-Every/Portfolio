@@ -10,15 +10,6 @@ include "inc/header.php"
 <html lang="en">
     <body id="body">
         <!-- <div id ="sidebar"></div> -->
-
-        <!-- <div id = "b-menu"> 
-            <a href="#"> 
-                <div class ="burger-line"></div>
-                <div class ="burger-line"></div>
-                <div class ="burger-line"></div>
-            </a>
-        </div> -->
-
         <div class ="title-wrapper"> 
             <div class = "title">
                 <h1>SCS Scheme</h1>

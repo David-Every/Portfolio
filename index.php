@@ -3,6 +3,7 @@
     <?php
     $page ="Portfolio";
         include "inc/header.php";
+        include "inc/JS.php";
     ?>
     <body>        
         <div id ="intro">
@@ -56,22 +57,24 @@
             <div class ="contactDetails" >
                 <!-- Align left -->
                 <h1> Get in touch</h1>
-                <p>
-                    Feel free to send me a message if you wish to get in contact and i'll get back to you as soon as possible!
-                </p>
+                <p> Feel free to send me a message if you wish to get in contact and i'll get back to you as soon as possible!</p>
+                <div id ="alerts"></div>
             </div>
-            <div class ="form" method ="post">
-                <!-- firstname --> <!-- Lastname -->
-                <span class ="names"> 
-                    <input type="text" id ="firstName" name ="firstName" placeholder="First Name">
-                    <input type="text" id ="lastName" name ="lastName" placeholder="Last Name">
-                </span>
+            <!-- <div class ="form" method ="post"> -->
+                <form  class ="form" method ="post">
+                    <!-- firstname --> <!-- Lastname -->
+                    <span class ="names"> 
+                        <input type="text" id ="firstName" name ="firstName" placeholder="First Name">
+                        <input type="text" id ="lastName" name ="lastName" placeholder="Last Name">
+                    </span>
 
-                <input type ="email" id ="email" name ="email" placeholder="Email">
-                <input type="text" id ="subject" name ="subject" placeholder = "Subject">
-                <textarea id = "message" name ="message" placeholder="Message"></textarea>
-                <p id ="msg" name ="submitMessage">Submit</p>
-            </div>
+                    <input type ="email" id ="email" name ="email" placeholder="Email">
+                    <input type="text" id ="subject" name ="subject" placeholder = "Subject">
+                    <textarea id = "message" name ="message" placeholder="Message"></textarea>
+                    <!-- <p id ="msg" name ="submitMessage">Submit</p> -->
+                    <input id ="msg" type ="submit" value = "Submit" name = "submitMessage">
+                </form>
+            <!-- </div> -->
            <?php include "inc/contact.php" ?>
         </div>
         <div class="scrollUpPosition"> 

@@ -71,3 +71,32 @@ function accordian(){
         isOpen = true;
     }
 }
+
+
+
+// FizzBuzz test
+maxNum = 100; 
+first = 3;
+second = 5;
+
+// for (let i = 1; i < maxNum + 1; i++) {
+//     if( i % first == 0 && i % second == 0){
+//         console.log("FizzBuzz"+"("+ i +")");
+//     }else if( i % first == 0){
+//         console.log("Fizz"+"("+ i +")");
+//     }else if( i % second == 0){
+//         console.log("Buzz"+"("+ i +")");
+//     }else{
+//         console.log(i);
+//     }    
+// }
+// for (let i = 1; i < maxNum+1; i++) {
+//     var str ="";
+
+//     if( i % first == 0) str += "Fizz";
+//     if( i % second == 0) str += "Buzz";
+
+//     str += " "+i;
+//     console.log(str);
+    
+// }
