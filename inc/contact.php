@@ -37,7 +37,7 @@ if(isset($_POST["submitMessage"])){
         }catch(Exception $e){
             throw $e;
         }
-        // sendMessage($fName, $lName,$email, $subject,$message);
+        sendMessage($fName, $lName,$email, $subject,$message);
     }
 }
 ?>

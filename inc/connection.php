@@ -1,10 +1,15 @@
   
 <?php
 
+
 try{
     $username = 'davideve_davidevery';
-    $password = '5MY1AypxU,pL';
-    $db = new PDO('https://springfield.netmatters-server.co.uk:2083/cpsess6525955636/3rdparty/phpMyAdmin/sql.php?server=1&db=davideve_portfolio&table=contact&pos=0', $username, $password);
+    $password = 'aET49AEgD3uA';
+    // $database = 'mysql:host=netmatters.otis-moorman.netmatters-scs.co.uk;dbname=otismoor_netmatters;port=3306';
+    $database = 'mysql:host=netmatters.david-every.netmatters-scs.co.uk;dbname=davideve_portfolio;port=3306';
+    $db = new PDO($database, $username, $password);
+
+    // $db = new PDO($database, $username, $password);
 
     $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 } catch(Exception $e){
