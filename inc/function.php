@@ -1,5 +1,5 @@
 <?php
-function sendMessage(){
+function sendMessage($fName,$lName, $email, $subject, $message){
     include "connection.php";
 
     $sql = "INSERT INTO contact (firstName lastName emailAddress subject message)

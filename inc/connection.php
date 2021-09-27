@@ -5,7 +5,6 @@
 try{
     $username = 'davideve_davidevery';
     $password = 'aET49AEgD3uA';
-    // $database = 'mysql:host=netmatters.otis-moorman.netmatters-scs.co.uk;dbname=otismoor_netmatters;port=3306';
     $database = 'mysql:host=netmatters.david-every.netmatters-scs.co.uk;dbname=davideve_portfolio;port=3306';
     $db = new PDO($database, $username, $password);
 

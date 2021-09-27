@@ -29,15 +29,15 @@ if(isset($_POST["submitMessage"])){
         echo'<script type = "text/javascript"> noMessage(); </script>';
     }
 
-    if(!empty($fName) && !empty($lName) && !empty($email) &&  !empty($subject) & !empty($message)){
+    if(!empty($fName) && !empty($lName) && !empty($email) &&  !empty($subject) && !empty($message)){
         // echo 'Form is Submittable';
         echo'<script type = "text/javascript"> messageSuccessful(); </script>';
         try{
-            testConnection();            
+            testConnection();   
+            sendMessage($fName, $lName, $email, $subject, $message);
         }catch(Exception $e){
             throw $e;
         }
-        sendMessage($fName, $lName,$email, $subject,$message);
     }
 }
 ?>
