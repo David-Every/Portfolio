@@ -32,6 +32,10 @@
         </div> -->
         
         <div id ="main-content">
+            <?php
+                $projectType = "Web Development Projects";
+                echo '<h3 class ="projectType">'.$projectType.'</h3>';
+            ?>
             <div id ="projectWrapper">
                 <?php
                 /**
@@ -40,8 +44,7 @@
                 //TODO get this to use variables instead of primitives for $proNum (+4?)
                  $project = json_decode(file_get_contents("data/project.json"));
                  $proNum = 0;
-                 $projectType = "Web Development Projects";
-                 echo '<h3 class ="projectType">'.$projectType.'</h3>';
+                 
                     foreach($project->Project as $pro){
                         $proNum++;
                         //Opens new class to group "newRow" projects into
@@ -50,12 +53,12 @@
                         }
 
                         include 'inc/project.php';
-                        
-
+                    
                         /**
                          * When there are 3 projects in the newRow
                          * close the row and create a new one
                          */
+
                         if(($proNum == 3) || ($proNum == 6)){
                             echo '</div>';
                             echo '<div class = "newRow">';
@@ -105,7 +108,20 @@
         </div>
        
         <!-- <script src = "src/JS/app.js"></script> -->
+        <script src = "slick.js"></script>
+        <script src = "carousel.js"></script>
+
+
+        <!-- <script>
+            $('#projectWrapper').slick({
+                arrows:true,
+                dots: true,
+                // rtl: true
+            });
+        </script> -->
         <?php include "inc/footer.php" ?>
+
+   
 
     </body>
 </html>

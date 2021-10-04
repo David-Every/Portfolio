@@ -12,6 +12,8 @@
     <link rel="icon" type="image/png" sizes="16x16" href="imgs/favicon/favicon-16x16.png">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="src/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="src/slick/slick-theme.css"/>
 
     <link rel="stylesheet" href ="dist/style.min.css">
     <title> <?php echo $page .' | David Every';?></title> 
