@@ -48,9 +48,12 @@
   #sidebar ul {
     padding: 0;
     list-style: none;
-    font-size: 32px; }
+    font-size: 32px;
+    display: flex;
+    width: 75px;
+    margin: 0 auto; }
     #sidebar ul li {
-      text-align: center; }
+      padding-right: 25px; }
       #sidebar ul li a {
         color: #111228; }
         #sidebar ul li a:hover {
@@ -97,9 +100,12 @@
   #sidebar__mobile ul {
     padding: 0;
     list-style: none;
-    font-size: 32px; }
+    font-size: 32px;
+    display: flex;
+    width: 75px;
+    margin: 0 auto; }
     #sidebar__mobile ul li {
-      text-align: center; }
+      padding-right: 25px; }
       #sidebar__mobile ul li a {
         color: #111228; }
         #sidebar__mobile ul li a:hover {
@@ -222,6 +228,13 @@
 #projectWrapper {
   width: 90%;
   margin: 0 auto; }
+  #projectWrapper .projectType {
+    width: 250px;
+    margin: 0 auto;
+    text-align: center;
+    text-decoration: underline;
+    font-size: 24px;
+    margin-bottom: 50px; }
 
 .project {
   background-color: #e8dde7;
@@ -267,7 +280,6 @@
 
 @media (min-width: 1023px) {
   #projectWrapper {
-    display: flex;
     width: 75%;
     margin: 0;
     margin-left: auto;
@@ -277,22 +289,30 @@
 
 @media (min-width: 1200px) and (max-width: 1600px) {
   #projectWrapper {
-    width: 80%; } }
+    width: 80%; }
+    #projectWrapper .newRow {
+      display: flex; } }
 
 @media (min-width: 1601px) and (max-width: 1850px) {
   #projectWrapper {
     width: 80%;
-    margin-right: 3%; } }
+    margin-right: 3%; }
+    #projectWrapper .newRow {
+      display: flex; } }
 
 @media (min-width: 1851px) and (max-width: 2560px) {
   #projectWrapper {
     width: 80%;
-    margin-right: 5%; } }
+    margin-right: 5%; }
+    #projectWrapper .newRow {
+      display: flex; } }
 
 @media (min-width: 2560px) {
   #projectWrapper {
     width: 80%;
-    margin-right: 5%; } }
+    margin-right: 5%; }
+    #projectWrapper .newRow {
+      display: flex; } }
 
 #contactMe {
   background: #d9d3cd;

@@ -33,6 +33,7 @@
 
     <ul>
         <li><a href ="https://github.com/David-Every?tab=repositories" target="_blank"><i class="fab fa-github"></i></a></li>
+        <li><a href ="https://www.linkedin.com/in/david-every-a8a77293/" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
     </ul>
 </div>
 

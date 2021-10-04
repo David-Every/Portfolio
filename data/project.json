@@ -17,6 +17,42 @@
             "image":"imgs/img-ify.png",
             "altTitle":"Img-Ify",
             "description":"This Project is a Javascript challenge, where I had to link Images with emails and display the images with the linked email."
-        }
+        },
+        {
+            "link":"http://soloproject.david-every.netmatters-scs.co.uk/",
+            "image":"imgs/SoloProject.png",
+            "altTitle":"Solo project Saron Wray Accounting",
+            "description":"Here is a solo project i asked to do to test my knowledge of PHP, CSS Javascript and HTML."
+        },
+        {
+            "link":"http://wordpress.david-every.netmatters-scs.co.uk/",
+            "image":"imgs/Wordpress.png",
+            "altTitle":"Wordpress project",
+            "description":"This Project was to test wordpress knowledge, the whole site is created using wordpress and its child themes."
+        },
+        {
+            "link":"#",
+            "image":"imgs/coming-soon.jpg",
+            "altTitle":"Coming Soon",
+            "description":"At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque."
+        },
+        {
+            "link":"#",
+            "image":"imgs/UnityBlockBreaker.png",
+            "altTitle":"Block Breaker Game Made using the Unity Game Engine",
+            "description":"At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque."
+        },
+        {
+            "link":"#",
+            "image":"imgs/UnityLazerDefender.png",
+            "altTitle":"Lazer Defender game made with the Unity Game Engine.",
+            "description":"At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque."
+        },  
+        {
+            "link":"#",
+            "image":"imgs/coming-soon.jpg",
+            "altTitle":"Coming Soon",
+            "description":"At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque."
+        }  
     ]
 }

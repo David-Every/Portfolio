@@ -7,6 +7,14 @@
 #projectWrapper{
     width:90%;
     margin: 0 auto;
+    .projectType{
+        width:250px;
+        margin:0 auto;
+        text-align: center;
+        text-decoration: underline;
+        font-size: 24px;
+        margin-bottom:50px;
+    }
 }
 
 .project{
@@ -72,7 +80,7 @@
 
 @media(min-width:1023px) {
     #projectWrapper{
-        display: flex;
+        // display: flex;
         width:75%;
         margin:0;
         margin-left:auto;
@@ -86,6 +94,9 @@
 @media(min-width:$break-xl) and (max-width:1600px){
     #projectWrapper{
         width: 80%;
+        .newRow{
+            display:flex;
+        }
     }
 }
 
@@ -93,6 +104,9 @@
     #projectWrapper{
         width: 80%;
         margin-right:3%;
+        .newRow{
+            display:flex;
+        }
     }
 }
 
@@ -100,11 +114,17 @@
     #projectWrapper{
         width: 80%;
         margin-right:5%;
+        .newRow{
+            display:flex;
+        }
     }
 }
 @media(min-width:$break-4k){
     #projectWrapper{
         width: 80%;
         margin-right:5%;
+        .newRow{
+            display:flex;
+        }
     }
 }
