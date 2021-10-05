@@ -1,0 +1,11 @@
+
+//edits for the slick plugin.
+.slick-prev:before, .slick-next:before{
+    color:$credBorder;
+    font-size: 30px;
+    // z-index: 100;
+    line-height: 0px;
+}
+.slick-prev, .slick-next{
+    margin-right:25px;
+}

@@ -37,13 +37,13 @@
             "description":"At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque."
         },
         {
-            "link":"#",
+            "link":"games.php",
             "image":"imgs/UnityBlockBreaker.png",
             "altTitle":"Block Breaker Game Made using the Unity Game Engine",
             "description":"At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque."
         },
         {
-            "link":"#",
+            "link":"games.php",
             "image":"imgs/UnityLazerDefender.png",
             "altTitle":"Lazer Defender game made with the Unity Game Engine.",
             "description":"At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque."
