@@ -27,6 +27,7 @@
             <?php
                 // $projectType = "Web Development Projects";
                 // echo '<h3 class ="projectType">'.$projectType.'</h3>';
+                $videos = array("BlockBreaker","LaserDefender","Glitch","TileVania");
             ?>
             <div id ="projectWrapper">
                 <?php
@@ -35,14 +36,13 @@
                  */
                 //TODO get this to use variables instead of primitives for $proNum (+4?)
                  $project = json_decode(file_get_contents("data/project.json"));
-                 $proNum = 0;
-                 $gameNum = 0;
-                 
+                 $proNum = 0;                 
                     foreach($project->Project as $pro){
                         $proNum++;
                         //Opens new class to group "newRow" projects into
                         if(($proNum == 1)){ //|| ($proNum == 2)){
                             echo '<div class = "webDev">';
+                            $gamesDesign = 0;
                             echo '<div class = "newRow">';
                         }
 
@@ -54,7 +54,7 @@
                          */
 
                         //Messy But works until i have time to beautify
-                        if(($proNum == 3)) {//|| ($proNum == 6)){
+                        if(($proNum == 3) || ($proNum == 9)) {//|| ($proNum == 6)){
                             echo '</div>';
                             echo '<div class = "newRow">';
                         }
@@ -62,14 +62,20 @@
                             echo '</div>';
                             echo '</div>';
                             echo '<div class ="gameDev">';
+                            $gamesDesign = 1;
                                 echo '<div class = "newRow">';
                         }
-                        // When there are 9 projects in Close the project 
-                        elseif(($proNum == 9)){
+                    
+                        // if($proNum == 9){
+                        //     echo '</div>';
+                        //     echo '<div class = "newRow">';
+                        // }
+
+                        // When there are 12 projects in Close the project 
+                        if(($proNum == 12)){
                                 echo '</div>';
                             echo '</div>';
                         }
-
                     }
                 ?>
             </div>

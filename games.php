@@ -1,8 +1,20 @@
 <!DOCTYPE html>
 <?php
     $page = "Game Development";  
-    include "inc/header.php" 
+    include "inc/header.php";
+
+    $gameName = $_GET['video'];
+    // $gameName = "LazerDefender";
+
+    $loadVideo = 'videos/'.$gameName.'.mp4';
+
+    /**
+     * Get URI Infomation about what Video that should be loaded
+    */
 ?>
+
+
+
 <body  id ="body">
     <div class ="title-wrapper" > 
         <div class = "title">
@@ -12,9 +24,13 @@
 
     <div id = "vidWrapper">
         <div id = "video">
-            <iframe src = "http://localhost/portfolio/" title="Test"> </iframe>
+            <h2> <?php  echo $gameName; ?></h2>
+            <iframe src = <?php echo $loadVideo ?> title="Test"> </iframe>
         </div>
+        
     </div>
+
+    
 
 </body >
 

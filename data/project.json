@@ -35,24 +35,43 @@
             "image":"imgs/coming-soon.jpg",
             "altTitle":"Coming Soon",
             "description":"At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque."
-        },
+        },   
         {
             "link":"games.php",
             "image":"imgs/UnityBlockBreaker.png",
-            "altTitle":"Block Breaker Game Made using the Unity Game Engine",
-            "description":"At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque."
+            "altTitle":"Block Breaker",
+            "description":"Block Breaker is a game where you must destroy all blocks, this game features Animations that ."
         },
         {
             "link":"games.php",
             "image":"imgs/UnityLazerDefender.png",
-            "altTitle":"Lazer Defender game made with the Unity Game Engine.",
+            "altTitle":"Lazer Defender",
             "description":"At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque."
         },  
+        {
+            "link":"games.php",
+            "image":"imgs/Glitch.png",
+            "altTitle":"Glitch Garden",
+            "description":"Glitch Garden is a  Plants vs Zombies Clone where the player must defend their home from the approaching enemies."
+        },
+        {
+            "link":"games.php",
+            "image":"imgs/TileVania.png",
+            "altTitle":"TileVania",
+            "description":"TileVania is a Platformer where the player has to escape the levels and collect Treasure."
+        },
+        {
+            "link":"games.php",
+            "image":"imgs/BallEscape.png",
+            "altTitle":"Ball Escape",
+            "description":"Ball Escape is a platformer where the player progresses through many levels to get the ball to escape by timing jumps and avoiding getting destroyed."
+        },
+        
         {
             "link":"#",
             "image":"imgs/coming-soon.jpg",
             "altTitle":"Coming Soon",
             "description":"At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque."
-        }  
+        }    
     ]
 }
